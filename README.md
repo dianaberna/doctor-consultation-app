@@ -1,6 +1,6 @@
 # Mobile UI App
 
-## Doctor Consultation App
+## Doctor Consultation App
 
 The goal of this project is to recreate the UI made in Figma using flexbox and adding animations / transitions.
 The following are the requirements to be met:
