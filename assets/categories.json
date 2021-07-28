@@ -1,0 +1,16 @@
+{
+    "categoriesList":[
+        {
+            "name":"Dental Surgeon", 
+            "image":"dental.png"
+        },
+        {
+            "name":"Heart Surgeon", 
+            "image":"heart.png"
+        },
+        {
+            "name":"Eye Specialist", 
+            "image":"eye.png"
+        }
+    ]
+}
