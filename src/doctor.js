@@ -4,7 +4,7 @@ import avatar1 from '../src/assets/images/avatar1.svg';
 import avatar2 from '../src/assets/images/avatar2.svg';
 import avatar3 from '../src/assets/images/avatar3.svg';
 
-// funzione da migliorare
+// TODO: improve
 function getAvatar(id){
   switch(id){
     case 1: return avatar1;

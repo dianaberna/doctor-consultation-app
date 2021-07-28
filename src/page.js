@@ -20,7 +20,7 @@ export function getIntro(categoriesList, doctorsList){
 
   
 // TODO new page for doctor details
-function doctorPage(doctor){
+export function getDoctor(doctor){
   // reset page
   document.getElementById("content").innerHTML = "";
 }

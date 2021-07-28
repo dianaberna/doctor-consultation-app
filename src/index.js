@@ -1,4 +1,4 @@
-import './style.css';
+import './style.css'; // TODO: fix images on css
 
 import { getIntro } from './page'
 
@@ -52,5 +52,5 @@ const categoriesList = createCategoriesList();
 Object.freeze(categoriesList);
 
 
-// fare check se mobile e stampare un alert
+// check if mobile and add alert
 document.body.appendChild(getIntro(categoriesList, doctorsList));
