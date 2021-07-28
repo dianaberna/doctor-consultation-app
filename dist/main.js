@@ -10,83 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./assets/doctors.json":
-/*!*****************************!*\
-  !*** ./assets/doctors.json ***!
-  \*****************************/
-/***/ ((module) => {
-
-eval("module.exports = JSON.parse('{\"doctorsList\":[{\"firstname\":\"Stella\",\"lastname\":\"Kane\",\"avatar\":\"docStella.svg\",\"categories\":\"Heart Surgeon\",\"workplace\":\"Flower Hospitals\",\"about\":\"Dr. Stella is the top most heart surgeon in Flower Hospital. She has done over 100 successful sugeries within past 3 years. She has achieved several awards for her wonderful contribution in her own field. She’s available for private consultation for given schedules.\"},{\"firstname\":\"Joseph\",\"lastname\":\"Cart\",\"avatar\":\"docJoseph.svg\",\"categories\":\"Dental Surgeon\",\"workplace\":\"Flower Hospitals\",\"about\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur justo a mi tempus pulvinar. Suspendisse pellentesque vitae turpis in suscipit. Proin dictum tempor dolor, sed hendrerit lorem consequat et.\"},{\"firstname\":\"Stefani\",\"lastname\":\"Albert\",\"avatar\":\"docStefani.svg\",\"specialization\":\"Heart Surgeon\",\"workplace\":\"Flower Hospitals\",\"about\":\"Donec luctus interdum sem sed posuere. Sed porttitor arcu mauris, vitae dictum enim porttitor sit amet. Proin ac nibh vitae nibh consectetur ullamcorper ac vel velit. Mauris dictum mi nisi, vel semper mauris accumsan id.\"}]}');\n\n//# sourceURL=webpack://doctor_consultation_app/./assets/doctors.json?");
-
-/***/ }),
-
-/***/ "./assets/img/Illustration.png":
-/*!*************************************!*\
-  !*** ./assets/img/Illustration.png ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"f0ffd836be6c9c130489.png\";\n\n//# sourceURL=webpack://doctor_consultation_app/./assets/img/Illustration.png?");
-
-/***/ }),
-
-/***/ "./assets/img/dental.png":
-/*!*******************************!*\
-  !*** ./assets/img/dental.png ***!
-  \*******************************/
-/***/ ((module) => {
-
-eval("module.exports = \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAhCAYAAACxzQkrAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJjSURBVHgBzVjbUeswEF0770k+KIHbwb0V3FABpINQAaECoAKgAoYKCBVgKsBUgOjA/OT94JyMzRjHsmwnE/vMCMlSVj6SV2dXWKLBeDzuViqVUzS76/X6KOi3LMvDs1qtVu94dFqtlhO15e8nk8kZ7P+j3UXXkV882LuLxeIZ9RC2KmprRTum0+kZqluUY0kHhcmd2Wx23263FV52AbIDn0AibNu+rtVqN1pCmPQWKxpIfnhpiPwigMWAVI87/4sQyDyATF8KAEnV6/UTtm3+mc/nV0WRIehn8Nlrti00jvEtP6R4ePC9fza2axef2Sfoe30Lp+oNjb9SDigSWkuJYEvJYFN1pTxw6dSulATkYuOoPUtJsFwuHy0GQqg0dSiT5O8b3B2o9UaHKEj3UjCwOz3Wm1PWbDbvUCkpCNiQmyAV+QmuzH8QQl7k8FCNRuNP8PCjQ0y04E+H/nRM9E7CHXEJ2iFDSQ+7Mwx3bCk1GNO5PEkJng7YnLNIBj+k30TJbOaL+7Gfxj6JGYpHNcj2/FSGO5woIeGELIrYWEbmNBIDuMqADMGTkkZCoHuXujFtcOXNQAyAdmyFHV9CkuB2Oh03M6FqtepIMry4iYNrks4IY6+SAC0hfGO+TOvcSUHZ8FIleQiZXgpf+RI9ITfPmJGQfzvNPDFurEo3Br/zchMyrEbpBrAQrV2SQxsJ4cQMJQchP1DG7YQxGTT5kKfTI5A1Te5EO7Djn7ILIUKjR25YEDV4lG1CQ9kVzCgRSj54XQoKQkQ/jS0Ddchuf7djxijI/QsnZp3FbjQaDVjC/2NKwjd+81j15E3QUQAAAABJRU5ErkJggg==\";\n\n//# sourceURL=webpack://doctor_consultation_app/./assets/img/dental.png?");
-
-/***/ }),
-
-/***/ "./assets/img/docStella.svg":
-/*!**********************************!*\
-  !*** ./assets/img/docStella.svg ***!
-  \**********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"943c10fc5ce87a17df9d.svg\";\n\n//# sourceURL=webpack://doctor_consultation_app/./assets/img/docStella.svg?");
-
-/***/ }),
-
-/***/ "./assets/img/eye.svg":
-/*!****************************!*\
-  !*** ./assets/img/eye.svg ***!
-  \****************************/
-/***/ ((module) => {
-
-eval("module.exports = \"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzgiIGhlaWdodD0iMjYiIHZpZXdCb3g9IjAgMCAzOCAyNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTM3Ljc2MDcgMTIuNTk4OEMzNy43MDA5IDEyLjU2MjkgMzAuMjk0NyAwLjA1OTg4MDIgMTkgMEM3LjcwNTI5IDAuMDU5ODgwMiAwLjI5OTExOCAxMi41NjI5IDAuMjM5Mjk1IDEyLjU5ODhMMCAxMi45OTRMMC4yMzkyOTUgMTMuNDAxMkMwLjI4NzE1NCAxMy40MzcxIDcuNTM3NzggMjUuOTQwMSAxOSAyNkMzMC40NzQyIDI1Ljk0MDEgMzcuNzEyOCAxMy40MzcxIDM3Ljc2MDcgMTMuNDAxMkwzOCAxMi45OTRMMzcuNzYwNyAxMi41OTg4Wk0xOC44MjA1IDIzLjExMzhDMTMuMzI4NyAyMy4xMDE4IDguNzk0MDggMTguNjU4NyA4Ljc4MjEyIDEzLjAwNkM4Ljc5NDA4IDcuMzUzMjkgMTMuMzI4NyAyLjg5ODIgMTguODIwNSAyLjg4NjIzQzI0LjMwMDQgMi44OTgyIDI4Ljg0NyA3LjM0MTMyIDI4Ljg1ODkgMTMuMDA2QzI4Ljg0NyAxOC42NTg3IDI0LjMwMDQgMjMuMTAxOCAxOC44MjA1IDIzLjExMzhaIiBmaWxsPSIjRjlGOUY5Ii8+CjxwYXRoIGQ9Ik0xOSA3Ljk2NDA3QzE2LjMwNzkgNy45NjQwNyAxNC4wNDY2IDEwLjE1NTcgMTQuMDM0NiAxMy4wMDZDMTQuMDQ2NiAxNS44NDQzIDE2LjMwNzkgMTguMDM1OSAxOSAxOC4wNDc5QzIxLjY5MjEgMTguMDQ3OSAyMy45NTM0IDE1Ljg1NjMgMjMuOTY1NCAxMy4wMDZDMjMuOTUzNCAxMC4xNTU3IDIxLjY5MjEgNy45NjQwNyAxOSA3Ljk2NDA3WiIgZmlsbD0iI0Y5RjlGOSIvPgo8L3N2Zz4K\";\n\n//# sourceURL=webpack://doctor_consultation_app/./assets/img/eye.svg?");
-
-/***/ }),
-
-/***/ "./assets/img/heart.svg":
-/*!******************************!*\
-  !*** ./assets/img/heart.svg ***!
-  \******************************/
-/***/ ((module) => {
-
-eval("module.exports = \"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzciIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNyAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI1Ljg0NTcgMjcuMzYyMkMyMC45OSAzMS4zNzQ2IDE4LjE4NzYgMzUuNzYzMiAxOC4wMzUgMzZDMTcuODEzIDM1Ljc0OTIgMTMuNzA2NSAzMC45NzA2IDEwLjUwMTggMjcuMzYyMkM5LjUxNjgyIDI2LjI0NzcgNy42MzAwNiAyNC40MjI2IDUuNzI5NDIgMjIuMTc5Nkg2Ljc4Mzc5QzcuMTU4MzcgMjIuMTc5NiA3LjUwNTIgMjEuOTU2NyA3LjY1NzgxIDIxLjYwODRMMTAuNzY1NCAxNC40MTk1TDEzLjg0NTMgMjYuMzMxM0MxMy45NTYzIDI2LjczNTMgMTQuMzE3IDI3LjAyNzkgMTQuNzMzMiAyNy4wNTU3QzE0Ljc0NyAyNy4wNTU3IDE0Ljc2MDkgMjcuMDU1NyAxNC43NzQ4IDI3LjA1NTdDMTUuMTc3MSAyNy4wNTU3IDE1LjU1MTcgMjYuNzkxIDE1LjY3NjYgMjYuNDE0OUwxOC44ODEzIDE3LjA1MjZMMjAuMjEzMSAxOS45NTA1QzIwLjM2NTcgMjAuMjk4OCAyMC43MTI1IDIwLjUwNzcgMjEuMDg3MSAyMC41MDc3SDMyLjU4ODFDMzAuMjk5IDIzLjQxOTUgMjcuNjQ5MiAyNS44NzE1IDI1Ljg0NTcgMjcuMzYyMlpNMzMuOTQ3NiAxOC41NTczSDIxLjY4MzdMMTkuNjE2NiAxNC4wMjk0QzE5LjQ1MDEgMTMuNjY3MiAxOS4wODk0IDEzLjQ0NDMgMTguNzAwOSAxMy40NzIxQzE4LjMxMjUgMTMuNSAxNy45NjU2IDEzLjc1MDggMTcuODQwOCAxNC4xMjY5TDE0Ljg5OTYgMjIuNzM2OEwxMS45MTY5IDExLjIyOTFDMTEuODE5OCAxMC44MzkgMTEuNDczIDEwLjU0NjQgMTEuMDcwNiAxMC41MTg2QzEwLjY1NDQgMTAuNDc2OCAxMC4yNzk5IDEwLjcxMzYgMTAuMTEzNCAxMS4wODk4TDYuMTQ1NjIgMjAuMjU3SDQuMTc1NjJDMC40ODUzMjggMTUuMzY2OSAtMi4zMTcwNyA5LjExMTQ1IDIuNzYwNTQgMy44NDUyQzUuNDEwMzQgMS4wODY2OSA3LjkzNTI3IDAuMTUzMjUxIDEwLjE0MTEgMC4xNTMyNTFDMTQuODcxOSAwLjE1MzI1MSAxNy45OTM0IDQuMjM1MjkgMTguMTU5OSA0LjQ0NDI3QzE4LjM4MTggNC4yMzUyOSAyMi41NzE2IDAgMjcuNjQ5MiAwQzI5Ljk3OTkgMCAzMi40MzU1IDAuOTMzNDM2IDM0LjY4MjkgMy42NTAxNUMzOC42MjI5IDguNDE0ODYgMzYuOTk5OCAxMy45MTggMzMuOTQ3NiAxOC41NTczWiIgZmlsbD0iI0Y5RjlGOSIvPgo8L3N2Zz4K\";\n\n//# sourceURL=webpack://doctor_consultation_app/./assets/img/heart.svg?");
-
-/***/ }),
-
-/***/ "./assets/img/search.svg":
-/*!*******************************!*\
-  !*** ./assets/img/search.svg ***!
-  \*******************************/
-/***/ ((module) => {
-
-eval("module.exports = \"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI1Ljg4NzUgMjQuMTEyNUwyMS42Mzc1IDE5Ljg3NUMyMy4wMDg3IDE4LjEyODEgMjMuNzUyOCAxNS45NzA4IDIzLjc1IDEzLjc1QzIzLjc1IDExLjc3MjIgMjMuMTYzNSA5LjgzODc5IDIyLjA2NDcgOC4xOTQzQzIwLjk2NTkgNi41NDk4MSAxOS40MDQxIDUuMjY4MDkgMTcuNTc2OCA0LjUxMTIxQzE1Ljc0OTYgMy43NTQzMyAxMy43Mzg5IDMuNTU2MyAxMS43OTkxIDMuOTQyMTVDOS44NTkyOSA0LjMyOCA4LjA3NzQ2IDUuMjgwNDEgNi42Nzg5NCA2LjY3ODk0QzUuMjgwNDEgOC4wNzc0NiA0LjMyOCA5Ljg1OTI5IDMuOTQyMTUgMTEuNzk5MUMzLjU1NjMgMTMuNzM4OSAzLjc1NDMzIDE1Ljc0OTYgNC41MTEyMSAxNy41NzY4QzUuMjY4MDkgMTkuNDA0MSA2LjU0OTgxIDIwLjk2NTkgOC4xOTQzIDIyLjA2NDdDOS44Mzg3OSAyMy4xNjM1IDExLjc3MjIgMjMuNzUgMTMuNzUgMjMuNzVDMTUuOTcwOCAyMy43NTI4IDE4LjEyODEgMjMuMDA4NyAxOS44NzUgMjEuNjM3NUwyNC4xMTI1IDI1Ljg4NzVDMjQuMjI4NyAyNi4wMDQ3IDI0LjM2NyAyNi4wOTc3IDI0LjUxOTMgMjYuMTYxMUMyNC42NzE2IDI2LjIyNDYgMjQuODM1IDI2LjI1NzMgMjUgMjYuMjU3M0MyNS4xNjUgMjYuMjU3MyAyNS4zMjg0IDI2LjIyNDYgMjUuNDgwNyAyNi4xNjExQzI1LjYzMyAyNi4wOTc3IDI1Ljc3MTMgMjYuMDA0NyAyNS44ODc1IDI1Ljg4NzVDMjYuMDA0NyAyNS43NzEzIDI2LjA5NzcgMjUuNjMzIDI2LjE2MTEgMjUuNDgwN0MyNi4yMjQ2IDI1LjMyODQgMjYuMjU3MyAyNS4xNjUgMjYuMjU3MyAyNUMyNi4yNTczIDI0LjgzNSAyNi4yMjQ2IDI0LjY3MTYgMjYuMTYxMSAyNC41MTkzQzI2LjA5NzcgMjQuMzY3IDI2LjAwNDcgMjQuMjI4NyAyNS44ODc1IDI0LjExMjVaTTYuMjUgMTMuNzVDNi4yNSAxMi4yNjY2IDYuNjg5ODcgMTAuODE2NiA3LjUxMzk4IDkuNTgzMjNDOC4zMzgwOSA4LjM0OTg2IDkuNTA5NDMgNy4zODg1NyAxMC44Nzk5IDYuODIwOTFDMTIuMjUwMyA2LjI1MzI1IDEzLjc1ODMgNi4xMDQ3MyAxNS4yMTMyIDYuMzk0MTFDMTYuNjY4IDYuNjgzNSAxOC4wMDQ0IDcuMzk3ODEgMTkuMDUzMyA4LjQ0NjdDMjAuMTAyMiA5LjQ5NTYgMjAuODE2NSAxMC44MzIgMjEuMTA1OSAxMi4yODY4QzIxLjM5NTMgMTMuNzQxNyAyMS4yNDY4IDE1LjI0OTcgMjAuNjc5MSAxNi42MjAxQzIwLjExMTQgMTcuOTkwNiAxOS4xNTAyIDE5LjE2MTkgMTcuOTE2OCAxOS45ODZDMTYuNjgzNCAyMC44MTAxIDE1LjIzMzQgMjEuMjUgMTMuNzUgMjEuMjVDMTEuNzYwOSAyMS4yNSA5Ljg1MzIzIDIwLjQ1OTggOC40NDY3IDE5LjA1MzNDNy4wNDAxOCAxNy42NDY4IDYuMjUgMTUuNzM5MSA2LjI1IDEzLjc1WiIgZmlsbD0iI0Y5RjlGOSIvPgo8L3N2Zz4K\";\n\n//# sourceURL=webpack://doctor_consultation_app/./assets/img/search.svg?");
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
 /*!*************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/img/Illustration.png */ \"./assets/img/Illustration.png\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/img/search.svg */ \"./assets/img/search.svg\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap);\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(___CSS_LOADER_URL_IMPORT_0___);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(___CSS_LOADER_URL_IMPORT_1___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body{\\n    font-family: 'Poppins', sans-serif;\\n    margin: 0 auto 0 auto;\\n    min-width: 100vw;\\n    background-color: #F9F9F9;\\n}\\n\\n.homepage{\\n    margin: 0;\\n    padding: 0 20px 0 20px;\\n    height: 100vh;\\n    background-color: #F9F9F9;\\n    background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n    background-repeat: no-repeat;\\n    background-position: left bottom;\\n    background-size: contain;\\n    background-attachment: fixed;\\n    }\\n.getstarted{\\n    background-color: #F9F9F9;\\n    padding: 10px 20px;\\n}\\n\\n.container{\\n    padding: 0 20px;    \\n}\\n\\n.navbar{\\n    position: absolute;\\n    top: 50px;\\n    width: 95%;\\n}\\n    .navbar .profile{\\n        margin-right: 40px;\\n        float: right;\\n    }  \\n\\nh1{\\n    color: #1e1c61;\\n    font-size: 30px;\\n    font-weight: 500;\\n}\\nh2{\\n    color: #1e1c61;\\n    font-size: 16px;\\n    font-weight: 700;\\n}\\nh3{\\n    color: #1e1c61;\\n    font-size: 16px;\\n    font-weight: 400;\\n    margin-top: 0;\\n}\\np{\\n    color: rgba(30,28,97, 0.65);\\n    font-size: 16px;\\n}\\n\\n/* Homepage */\\n.button{\\n    background-color: #ef716b;\\n    border: 0px;\\n    border-radius: 35px;\\n    color: #f9f9f9;\\n    height: 40px;\\n    top: 20px;\\n    padding: 10px 25px;\\n    position: relative;\\n}\\n\\n/* Getstarted Page */   \\n#textSearch{\\n    background-color: #F2F2F2;\\n    border: 0px;\\n    border-radius: 73px;\\n    width: 90%;\\n    height: 45px;\\n    padding-left: 20px;\\n}\\n\\n#submitSearch{\\n    background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_1___ + \");\\n    background-repeat: no-repeat;\\n    background-position: center;\\n    background-color: #F57E71;\\n    border: 0;\\n    position: absolute;\\n    height: 53px;\\n    width: 75px;\\n    right: 5%;\\n    margin-top: -3px;\\n    border-radius: 30px;\\n}\\n\\n.container-categories{\\n    display: flex;\\n    flex-direction: row;\\n    overflow-y: scroll;\\n    padding: 20px 0;\\n}\\n\\n    .container-categories .item{\\n        border-radius: 15px;\\n        height: 120px;\\n        width: 113px;\\n        background-color: #fff;\\n        margin-right: 20px;\\n        padding: 0 10px 25px 25px;\\n    }\\n\\n    .container-categories::-webkit-scrollbar {\\n        display: none;\\n    }\\n\\n.icon{\\n    height: 84px;\\n    width: 84px;\\n    position: relative;\\n    top: -10px;\\n    right: -20px;\\n    border-radius: 15px;\\n    text-align: center;\\n}\\n    .icon img{\\n        padding-top: 25px;\\n    }\\n    .icon.dental{    \\n        background-color: #4B7FFB;\\n    }\\n    .icon.heart{\\n        background-color: #FFB167;\\n    }\\n    .icon.eye{\\n        background-color: #F57E71;\\n    }\\n\\n.doctor{\\n    height: 87px;\\n    display: flex;\\n    border-radius: 20px;\\n    margin-bottom: 20px;\\n    padding: 15px;\\n}\\n    .doctor img{\\n        padding-right: 15px;\\n    }\\n    .doctor p{\\n        margin-top: -10px;\\n        font-size: 14px;\\n    }\\n    .doctor.heart{\\n        background-color: rgba(255,177,103, 0.1);\\n    }\\n    .doctor.dental{\\n        background-color: rgba(75,127,251, 0.1);\\n    }\\n\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://doctor_consultation_app/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/images/Illustration1.png */ \"./src/assets/images/Illustration1.png\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap);\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(___CSS_LOADER_URL_IMPORT_0___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body{\\n    font-family: 'Poppins', sans-serif;\\n    margin: 0 auto 0 auto;\\n    min-width: 100vw;\\n    background-color: #F9F9F9;\\n}\\n\\n.homepage{\\n    margin: 0;\\n    padding: 0 20px 0 20px;\\n    height: 100vh;\\n    background-color: #F9F9F9;\\n    background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n    background-repeat: no-repeat;\\n    background-position: left bottom;\\n    background-size: contain;\\n    background-attachment: fixed;\\n    }\\n.getstarted{\\n    background-color: #F9F9F9;\\n    padding: 10px 20px;\\n}\\n\\n.container{\\n    padding: 0 20px;    \\n}\\n\\n.navbar{\\n    position: absolute;\\n    top: 50px;\\n    width: 95%;\\n}\\n    .navbar .profile{\\n        margin-right: 40px;\\n        float: right;\\n    }  \\n\\nh1{\\n    color: #1e1c61;\\n    font-size: 30px;\\n    font-weight: 500;\\n}\\nh2{\\n    color: #1e1c61;\\n    font-size: 16px;\\n    font-weight: 700;\\n}\\nh3{\\n    color: #1e1c61;\\n    font-size: 16px;\\n    font-weight: 400;\\n    margin-top: 0;\\n}\\np{\\n    color: rgba(30,28,97, 0.65);\\n    font-size: 16px;\\n}\\n\\n/* Homepage */\\n.button{\\n    background-color: #ef716b;\\n    border: 0px;\\n    border-radius: 35px;\\n    color: #f9f9f9;\\n    height: 40px;\\n    top: 20px;\\n    padding: 10px 25px;\\n    position: relative;\\n}\\n\\n/* Getstarted Page */   \\n#textSearch{\\n    background-color: #F2F2F2;\\n    border: 0px;\\n    border-radius: 73px;\\n    width: 90%;\\n    height: 45px;\\n    padding-left: 20px;\\n}\\n\\n#submitSearch{\\n    background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n    background-repeat: no-repeat;\\n    background-position: center;\\n    background-color: #F57E71;\\n    border: 0;\\n    position: absolute;\\n    height: 53px;\\n    width: 75px;\\n    right: 5%;\\n    margin-top: -3px;\\n    border-radius: 30px;\\n}\\n\\n.container-categories{\\n    display: flex;\\n    flex-direction: row;\\n    overflow-y: scroll;\\n    padding: 20px 0;\\n}\\n\\n    .container-categories .item{\\n        border-radius: 15px;\\n        height: 120px;\\n        width: 113px;\\n        background-color: #fff;\\n        margin-right: 20px;\\n        padding: 0 10px 25px 25px;\\n    }\\n\\n    .container-categories::-webkit-scrollbar {\\n        display: none;\\n    }\\n\\n.icon{\\n    height: 84px;\\n    width: 84px;\\n    position: relative;\\n    top: -10px;\\n    right: -20px;\\n    border-radius: 15px;\\n    text-align: center;\\n}\\n    .icon img{\\n        padding-top: 25px;\\n    }\\n    .icon.dental{    \\n        background-color: #4B7FFB;\\n    }\\n    .icon.heart{\\n        background-color: #FFB167;\\n    }\\n    .icon.eye{\\n        background-color: #F57E71;\\n    }\\n\\n.doctor{\\n    height: 87px;\\n    display: flex;\\n    border-radius: 20px;\\n    margin-bottom: 20px;\\n    padding: 15px;\\n}\\n    .doctor img{\\n        padding-right: 15px;\\n    }\\n    .doctor p{\\n        margin-top: -10px;\\n        font-size: 14px;\\n    }\\n    .doctor.heart{\\n        background-color: rgba(255,177,103, 0.1);\\n    }\\n    .doctor.dental{\\n        background-color: rgba(75,127,251, 0.1);\\n    }\\n\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://doctor_consultation_app/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -107,6 +37,76 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 /***/ ((module) => {
 
 eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // eslint-disable-next-line no-param-reassign\n    options = {};\n  }\n\n  if (!url) {\n    return url;\n  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n\n\n  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    // eslint-disable-next-line no-param-reassign\n    url = url.slice(1, -1);\n  }\n\n  if (options.hash) {\n    // eslint-disable-next-line no-param-reassign\n    url += options.hash;\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]|(%20)/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack://doctor_consultation_app/./node_modules/css-loader/dist/runtime/getUrl.js?");
+
+/***/ }),
+
+/***/ "./src/assets/images/Illustration1.png":
+/*!*********************************************!*\
+  !*** ./src/assets/images/Illustration1.png ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"41b939dd513464adce02.png\";\n\n//# sourceURL=webpack://doctor_consultation_app/./src/assets/images/Illustration1.png?");
+
+/***/ }),
+
+/***/ "./src/assets/images/avatar1.svg":
+/*!***************************************!*\
+  !*** ./src/assets/images/avatar1.svg ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"943c10fc5ce87a17df9d14aab1a05ef7.svg\");\n\n//# sourceURL=webpack://doctor_consultation_app/./src/assets/images/avatar1.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/avatar2.svg":
+/*!***************************************!*\
+  !*** ./src/assets/images/avatar2.svg ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"b11a36d8516f0df485d99f63dc895143.svg\");\n\n//# sourceURL=webpack://doctor_consultation_app/./src/assets/images/avatar2.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/avatar3.svg":
+/*!***************************************!*\
+  !*** ./src/assets/images/avatar3.svg ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"8455eb9e6e424948c8308e86f120c3aa.svg\");\n\n//# sourceURL=webpack://doctor_consultation_app/./src/assets/images/avatar3.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/dental.png":
+/*!**************************************!*\
+  !*** ./src/assets/images/dental.png ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"df134c8034b3adc22c11ea38fb8fccf3.png\");\n\n//# sourceURL=webpack://doctor_consultation_app/./src/assets/images/dental.png?");
+
+/***/ }),
+
+/***/ "./src/assets/images/eye.svg":
+/*!***********************************!*\
+  !*** ./src/assets/images/eye.svg ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"2285b5131de2c1831677631cfaf96184.svg\");\n\n//# sourceURL=webpack://doctor_consultation_app/./src/assets/images/eye.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/heart.svg":
+/*!*************************************!*\
+  !*** ./src/assets/images/heart.svg ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"cb1b9085cfd360961ee931d4ddb9571e.svg\");\n\n//# sourceURL=webpack://doctor_consultation_app/./src/assets/images/heart.svg?");
 
 /***/ }),
 
@@ -180,13 +180,73 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, style) {\
 
 /***/ }),
 
+/***/ "./src/assets/categories.json":
+/*!************************************!*\
+  !*** ./src/assets/categories.json ***!
+  \************************************/
+/***/ ((module) => {
+
+eval("module.exports = JSON.parse('{\"categoriesList\":[{\"name\":\"Dental Surgeon\",\"image\":\"dental.png\"},{\"name\":\"Heart Surgeon\",\"image\":\"heart.png\"},{\"name\":\"Eye Specialist\",\"image\":\"eye.png\"}]}');\n\n//# sourceURL=webpack://doctor_consultation_app/./src/assets/categories.json?");
+
+/***/ }),
+
+/***/ "./src/assets/doctors.json":
+/*!*********************************!*\
+  !*** ./src/assets/doctors.json ***!
+  \*********************************/
+/***/ ((module) => {
+
+eval("module.exports = JSON.parse('{\"doctorsList\":[{\"id\":1,\"firstname\":\"Stella\",\"lastname\":\"Kane\",\"classCSS\":\"heart\",\"categories\":\"Heart Surgeon\",\"workplace\":\"Flower Hospitals\",\"about\":\"Dr. Stella is the top most heart surgeon in Flower Hospital. She has done over 100 successful sugeries within past 3 years. She has achieved several awards for her wonderful contribution in her own field. She’s available for private consultation for given schedules.\"},{\"id\":2,\"firstname\":\"Joseph\",\"lastname\":\"Cart\",\"classCSS\":\"dental\",\"categories\":\"Dental Surgeon\",\"workplace\":\"Flower Hospitals\",\"about\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur justo a mi tempus pulvinar. Suspendisse pellentesque vitae turpis in suscipit. Proin dictum tempor dolor, sed hendrerit lorem consequat et.\"},{\"id\":3,\"firstname\":\"Stefani\",\"lastname\":\"Albert\",\"classCSS\":\"heart\",\"categories\":\"Heart Surgeon\",\"workplace\":\"Flower Hospitals\",\"about\":\"Donec luctus interdum sem sed posuere. Sed porttitor arcu mauris, vitae dictum enim porttitor sit amet. Proin ac nibh vitae nibh consectetur ullamcorper ac vel velit. Mauris dictum mi nisi, vel semper mauris accumsan id.\"}]}');\n\n//# sourceURL=webpack://doctor_consultation_app/./src/assets/doctors.json?");
+
+/***/ }),
+
+/***/ "./src/categories.js":
+/*!***************************!*\
+  !*** ./src/categories.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"printCategoriesList\": () => (/* binding */ printCategoriesList)\n/* harmony export */ });\n/* harmony import */ var _generic__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./generic */ \"./src/generic.js\");\n/* harmony import */ var _src_assets_images_dental_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/assets/images/dental.png */ \"./src/assets/images/dental.png\");\n/* harmony import */ var _src_assets_images_heart_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/assets/images/heart.svg */ \"./src/assets/images/heart.svg\");\n/* harmony import */ var _src_assets_images_eye_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/assets/images/eye.svg */ \"./src/assets/images/eye.svg\");\n\n\n\n\n\n\nfunction printCategoriesList(page){\n    page.appendChild((0,_generic__WEBPACK_IMPORTED_MODULE_0__.createContent)(\"h2\", \"Categories\"));\n    var div = document.createElement(\"div\");\n    div.className= \"container-categories\";\n    page.appendChild(div);\n    var cat = \"Dental Surgeon\";\n    var item =`<div class=\"item\"><div class=\"icon dental\"><img src=\"${_src_assets_images_dental_png__WEBPACK_IMPORTED_MODULE_1__.default}\"></div><h3>${cat}</h3></div>`;\n    div.insertAdjacentHTML(\"beforeend\", item);\n    cat = \"Heart Surgeon\";\n    item =`<div class=\"item\"><div class=\"icon heart\"><img src=\"${_src_assets_images_heart_svg__WEBPACK_IMPORTED_MODULE_2__.default}\"></div><h3>${cat}</h3></div>`;\n    div.insertAdjacentHTML(\"beforeend\", item);\n    cat = \"Eye Specialist\";\n    item =`<div class=\"item\"><div class=\"icon eye\"><img src=\"${_src_assets_images_eye_svg__WEBPACK_IMPORTED_MODULE_3__.default}\"></div><h3>${cat}</h3></div>`;\n    div.insertAdjacentHTML(\"beforeend\", item);\n}\n\n//# sourceURL=webpack://doctor_consultation_app/./src/categories.js?");
+
+/***/ }),
+
+/***/ "./src/doctor.js":
+/*!***********************!*\
+  !*** ./src/doctor.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"printDoctorsList\": () => (/* binding */ printDoctorsList)\n/* harmony export */ });\n/* harmony import */ var _generic__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./generic */ \"./src/generic.js\");\n/* harmony import */ var _src_assets_images_avatar1_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/assets/images/avatar1.svg */ \"./src/assets/images/avatar1.svg\");\n/* harmony import */ var _src_assets_images_avatar2_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/assets/images/avatar2.svg */ \"./src/assets/images/avatar2.svg\");\n/* harmony import */ var _src_assets_images_avatar3_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/assets/images/avatar3.svg */ \"./src/assets/images/avatar3.svg\");\n\n\n\n\n\n\n// funzione da migliorare\nfunction getAvatar(id){\n  switch(id){\n    case 1: return _src_assets_images_avatar1_svg__WEBPACK_IMPORTED_MODULE_1__.default;\n    case 2: return _src_assets_images_avatar2_svg__WEBPACK_IMPORTED_MODULE_2__.default;\n    case 3: return _src_assets_images_avatar3_svg__WEBPACK_IMPORTED_MODULE_3__.default;\n  }\n}\n\nfunction printDoctorsList(page, doctorsList){\n  var div = document.createElement(\"div\");\n  div.className= \"container-top\";\n  page.appendChild(div);\n\n  doctorsList.forEach(element => {\n    var item = `<div class=\"doctor ${element.classCSS}\" onclick=\"doctorPage(${element.id})\"><img src=\"`+getAvatar(element.id)+`\"><div><h2>Dr. ${element.firstname} ${element.lastname}</h2><p>${element.categories} - ${element.workplace} </p></div></div>`;\n    div.insertAdjacentHTML(\"beforeend\", item);\n  });\n\n}\n\n//# sourceURL=webpack://doctor_consultation_app/./src/doctor.js?");
+
+/***/ }),
+
+/***/ "./src/generic.js":
+/*!************************!*\
+  !*** ./src/generic.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createContent\": () => (/* binding */ createContent),\n/* harmony export */   \"printSearchBar\": () => (/* binding */ printSearchBar)\n/* harmony export */ });\n\nfunction createContent(tag, text) {\n    const isContent = document.createElement(tag);\n    isContent.appendChild(document.createTextNode(text));\n    return isContent;\n}\n\nfunction printSearchBar(page){\n    // TODO implementare la ricerca \n    var input = document.createElement(\"input\");\n    input.setAttribute(\"type\",\"text\");\n    input.setAttribute(\"id\",\"textSearch\");\n    input.setAttribute(\"placeholder\",\"Search for doctors\")\n    page.appendChild(input);\n  \n    var input = document.createElement(\"input\");\n    input.setAttribute(\"type\",\"submit\");\n    input.setAttribute(\"id\",\"submitSearch\");\n    input.setAttribute(\"value\",\"\");\n    page.appendChild(input);\n}\n\n//# sourceURL=webpack://doctor_consultation_app/./src/generic.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _assets_img_dental_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/img/dental.png */ \"./assets/img/dental.png\");\n/* harmony import */ var _assets_img_heart_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/img/heart.svg */ \"./assets/img/heart.svg\");\n/* harmony import */ var _assets_img_eye_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/img/eye.svg */ \"./assets/img/eye.svg\");\n/* harmony import */ var _assets_img_docStella_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/img/docStella.svg */ \"./assets/img/docStella.svg\");\n/* harmony import */ var _assets_doctors_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/doctors.json */ \"./assets/doctors.json\");\n\n\n\n\n\n\n\n\n//import categories from '../assets/categories.json';\n\n\nclass Doctor {\n  constructor(firstname, lastname, avatar, categories, workplace, about) {\n      this.firstname = firstname;\n      this.lastname = lastname;\n      this.avatar = \"../assets/img/\" + avatar;\n      this.categories = categories;\n      this.workplace = workplace;\n      this.about = about;\n  }\n}\n\nfunction createMedicalStaff() {\n  const listDoctors = _assets_doctors_json__WEBPACK_IMPORTED_MODULE_5__.doctorsList;\n  return listDoctors.map( function(doctor) {\n      return new Doctor(doctor.firstname, doctor.lastname, doctor.avatar, doctor.specialization, doctor.workplace, doctor.about)\n  })\n}\n\n\nfunction createContent(tag, text) {\n  const isContent = document.createElement(tag);\n  isContent.appendChild(document.createTextNode(text));\n  return isContent;\n}\n\nfunction createPage(){\n\n}\n\nfunction newPage(id) {\n  // reset page\n  document.getElementById(id).innerHTML = \"\";\n\n  // print title\n  const page = document.createElement('div');\n  document.getElementById(id).appendChild(page);\n  page.className= \"getstarted\";\n  page.appendChild(createContent(\"h1\", \"Find Your Desired Doctor\"));\n\n  // print search bar and button\n  var input = document.createElement(\"input\");\n  input.setAttribute(\"type\",\"text\");\n  input.setAttribute(\"id\",\"textSearch\");\n  input.setAttribute(\"placeholder\",\"Search for doctors\")\n  page.appendChild(input);\n\n  var input = document.createElement(\"input\");\n  input.setAttribute(\"type\",\"submit\");\n  input.setAttribute(\"id\",\"submitSearch\");\n  input.setAttribute(\"value\",\"\");\n  page.appendChild(input);\n\n  \n  // print categories\n  page.appendChild(createContent(\"h2\", \"Categories\"));\n  var div = document.createElement(\"div\");\n  div.className= \"container-categories\";\n  page.appendChild(div);\n\n  var cat = \"Dental Surgeon\";\n  var item =`<div class=\"item\"><div class=\"icon dental\"><img src=\"${_assets_img_dental_png__WEBPACK_IMPORTED_MODULE_1__}\"></div><h3>${cat}</h3></div>`;\n  div.insertAdjacentHTML(\"beforeend\", item);\n  cat = \"Heart Surgeon\";\n  item =`<div class=\"item\"><div class=\"icon heart\"><img src=\"${_assets_img_heart_svg__WEBPACK_IMPORTED_MODULE_2__}\"></div><h3>${cat}</h3></div>`;\n  div.insertAdjacentHTML(\"beforeend\", item);\n  cat = \"Eye Specialist\";\n  item =`<div class=\"item\"><div class=\"icon eye\"><img src=\"${_assets_img_eye_svg__WEBPACK_IMPORTED_MODULE_3__}\"></div><h3>${cat}</h3></div>`;\n  div.insertAdjacentHTML(\"beforeend\", item);\n\n  //print doctor \n  page.appendChild(createContent(\"h2\", \"Top Doctors\"));\n  var div = document.createElement(\"div\");\n  div.className= \"container-top\";\n  page.appendChild(div);\n  var listDoctors = createMedicalStaff();\n\n  console.log(listDoctors);\n\n  var doc = \"Dr. Stella Kane\";\n  var hospital = \"Heart Surgeon - Flower Hospitals\";\n  var item = `<div class=\"doctor heart\"><img src=\"${listDoctors[0].avatar}\"><div><h2>${doc}</h2><p>${hospital}</p></div></div>`;\n  div.insertAdjacentHTML(\"beforeend\", item);\n}\n\nfunction component() {\n  const page = document.createElement('div');\n  page.className= \"homepage\";\n  page.appendChild(createContent(\"h1\", \"Choose The Doctor You Want\"));\n  page.appendChild(createContent(\"p\", \"Lorem ipsum dolor amet, consectetur adipiscing inet deli\"));\n  \n  const button = document.createElement(\"button\");\n  button.className = \"button\";\n  button.onclick = function() { newPage(\"content\"); };\n  button.appendChild(document.createTextNode(\"Get started\"));\n  page.appendChild(button);\n\n  return page;\n}\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack://doctor_consultation_app/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./page */ \"./src/page.js\");\n/* harmony import */ var _src_assets_categories_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/assets/categories.json */ \"./src/assets/categories.json\");\n/* harmony import */ var _src_assets_doctors_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/assets/doctors.json */ \"./src/assets/doctors.json\");\n\n\n\n\n\n\n\n// doctor\n\nclass Doctor {\n  constructor(id, firstname, lastname, avatar, classCSS, categories, workplace, about) {\n      this.id = id;\n      this.firstname = firstname;\n      this.lastname = lastname;\n      this.avatar = avatar;\n      this.classCSS = classCSS;\n      this.categories = categories;\n      this.workplace = workplace;\n      this.about = about;\n  }\n}\n\nfunction createDoctorsList() {\n  const listDoctors = _src_assets_doctors_json__WEBPACK_IMPORTED_MODULE_3__.doctorsList;\n  return listDoctors.map( function(doctor) {\n      return new Doctor(doctor.id, doctor.firstname, doctor.lastname, doctor.avatar, doctor.classCSS, doctor.categories, doctor.workplace, doctor.about)\n  })\n}\n\nconst doctorsList = createDoctorsList();\nObject.freeze(doctorsList);\n\n// categories\n\nclass Category {\n  constructor(name, image) {\n      this.name = name;\n      this.image = \"../src/assets/images/\" + image;\n  }\n}\n\nfunction createCategoriesList() {\n  const listCategories = _src_assets_categories_json__WEBPACK_IMPORTED_MODULE_2__.categoriesList;\n  return listCategories.map( function(category) {\n      return new Category(category.name, category.image)\n  })\n}\n\nconst categoriesList = createCategoriesList();\nObject.freeze(categoriesList);\n\n\n// fare check se mobile e stampare un alert\ndocument.body.appendChild((0,_page__WEBPACK_IMPORTED_MODULE_1__.getIntro)(doctorsList));\n\n\n//# sourceURL=webpack://doctor_consultation_app/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/page.js":
+/*!*********************!*\
+  !*** ./src/page.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getIntro\": () => (/* binding */ getIntro)\n/* harmony export */ });\n/* harmony import */ var _generic__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./generic */ \"./src/generic.js\");\n/* harmony import */ var _doctor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./doctor */ \"./src/doctor.js\");\n/* harmony import */ var _categories__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./categories */ \"./src/categories.js\");\n\n\n\n\nfunction getIntro(doctorsList){\n    const page = document.createElement('div');\n    page.className= \"homepage\";\n    page.appendChild((0,_generic__WEBPACK_IMPORTED_MODULE_0__.createContent)(\"h1\", \"Choose The Doctor You Want\"));\n    page.appendChild((0,_generic__WEBPACK_IMPORTED_MODULE_0__.createContent)(\"p\", \"Lorem ipsum dolor amet, consectetur adipiscing inet deli\"));\n    \n    const button = document.createElement(\"button\");\n    button.className = \"button\";\n    button.onclick = function() { contentPage(\"content\", doctorsList); };\n    button.appendChild(document.createTextNode(\"Get started\"));\n    page.appendChild(button);\n    return page;\n  }\n\n\n  \n  \n  function doctorPage(doctor){\n    // reset page\n    document.getElementById(\"content\").innerHTML = \"\";\n  }\n\nfunction contentPage(id, doctorsList) {\n    // reset page\n    document.getElementById(id).innerHTML = \"\";\n  \n    // print title\n    const page = document.createElement('div');\n    document.getElementById(id).appendChild(page);\n    page.className= \"getstarted\";\n    page.appendChild((0,_generic__WEBPACK_IMPORTED_MODULE_0__.createContent)(\"h1\", \"Find Your Desired Doctor\"));\n  \n    // print search bar and button\n    (0,_generic__WEBPACK_IMPORTED_MODULE_0__.printSearchBar)(page);\n  \n    // categories section\n\n  \n    (0,_categories__WEBPACK_IMPORTED_MODULE_2__.printCategoriesList)(page);\n  \n    // top doctors section \n\n    page.appendChild((0,_generic__WEBPACK_IMPORTED_MODULE_0__.createContent)(\"h2\", \"Top Doctors\"));\n    \n    //print doctor list \n    (0,_doctor__WEBPACK_IMPORTED_MODULE_1__.printDoctorsList)(page, doctorsList);\n    \n  }\n\n//# sourceURL=webpack://doctor_consultation_app/./src/page.js?");
 
 /***/ })
 

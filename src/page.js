@@ -2,7 +2,7 @@ import { createContent, printSearchBar } from './generic'
 import { printDoctorsList } from './doctor'
 import { printCategoriesList } from './categories';
 
-export function getIntro(doctorsList){
+export function getIntro(categoriesList, doctorsList){
     const page = document.createElement('div');
     page.className= "homepage";
     page.appendChild(createContent("h1", "Choose The Doctor You Want"));
@@ -10,7 +10,8 @@ export function getIntro(doctorsList){
     
     const button = document.createElement("button");
     button.className = "button";
-    button.onclick = function() { contentPage("content", doctorsList); };
+
+    button.onclick = function() { contentPage("content", categoriesList, doctorsList); };
     button.appendChild(document.createTextNode("Get started"));
     page.appendChild(button);
     return page;
@@ -18,13 +19,13 @@ export function getIntro(doctorsList){
 
 
   
-  
-  function doctorPage(doctor){
-    // reset page
-    document.getElementById("content").innerHTML = "";
-  }
+// TODO new page for doctor details
+function doctorPage(doctor){
+  // reset page
+  document.getElementById("content").innerHTML = "";
+}
 
-function contentPage(id, doctorsList) {
+function contentPage(id, categoriesList, doctorsList) {
     // reset page
     document.getElementById(id).innerHTML = "";
   
@@ -38,15 +39,9 @@ function contentPage(id, doctorsList) {
     printSearchBar(page);
   
     // categories section
-
-  
-    printCategoriesList(page);
+    printCategoriesList(page, categoriesList);
   
     // top doctors section 
-
-    page.appendChild(createContent("h2", "Top Doctors"));
-    
-    //print doctor list 
     printDoctorsList(page, doctorsList);
     
   }
