@@ -2,7 +2,7 @@ import './style.css';
 
 import { getIntro } from './page'
 
-import categories from '../assets/categories.json';
+import categoriesJson from '../assets/categories.json';
 import doctorsJson from '../assets/doctors.json';
 
 // doctor
@@ -32,6 +32,22 @@ Object.freeze(doctorsList);
 
 // categories
 
+class Category {
+  constructor(name, image) {
+      this.name = name;
+      this.image = "../assets/img/" + image;
+  }
+}
+
+function createCategoriesList() {
+  const listCategories = categoriesJson.categoriesList;
+  return listCategories.map( function(category) {
+      return new Category(category.name, category.image)
+  })
+}
+
+const categoriesList = createCategoriesList();
+Object.freeze(categoriesList);
 
 
 // fare check se mobile e stampare un alert
