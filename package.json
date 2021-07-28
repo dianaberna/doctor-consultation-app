@@ -1,6 +1,26 @@
 {
+  "name": "doctor_consultation_app",
+  "version": "1.0.0",
+  "description": "Mobile App for Doctor consultation",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "Diana Bernabei",
+  "license": "MIT",
+  "private": true,
   "devDependencies": {
+    "css-loader": "^6.2.0",
+    "json-loader": "^0.5.7",
+    "style-loader": "^3.2.1",
     "webpack": "^5.45.1",
-    "webpack-cli": "^4.7.2"
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "url-loader": "^4.1.1"
   }
 }
