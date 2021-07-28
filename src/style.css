@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto 0 auto;
+    min-width: 100vw;
+    background-color: #F9F9F9;
+}
+
+.homepage{
+    margin: 0;
+    padding: 0 20px 0 20px;
+    height: 100vh;
+    background-color: #F9F9F9;
+    background-image: url(../assets/img/Illustration1.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+    background-attachment: fixed;
+    }
+.getstarted{
+    background-color: #F9F9F9;
+    padding: 10px 20px;
+}
+
+.container{
+    padding: 0 20px;    
+}
+
+.navbar{
+    position: absolute;
+    top: 50px;
+    width: 95%;
+}
+    .navbar .profile{
+        margin-right: 40px;
+        float: right;
+    }  
+
+h1{
+    color: #1e1c61;
+    font-size: 30px;
+    font-weight: 500;
+}
+h2{
+    color: #1e1c61;
+    font-size: 16px;
+    font-weight: 700;
+}
+h3{
+    color: #1e1c61;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
+}
+p{
+    color: rgba(30,28,97, 0.65);
+    font-size: 16px;
+}
+
+/* Homepage */
+.button{
+    background-color: #ef716b;
+    border: 0px;
+    border-radius: 35px;
+    color: #f9f9f9;
+    height: 40px;
+    top: 20px;
+    padding: 10px 25px;
+    position: relative;
+}
+
+/* Getstarted Page */   
+#textSearch{
+    background-color: #F2F2F2;
+    border: 0px;
+    border-radius: 73px;
+    width: 90%;
+    height: 45px;
+    padding-left: 20px;
+}
+
+#submitSearch{
+    background-image: url(../assets/img/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F57E71;
+    border: 0;
+    position: absolute;
+    height: 53px;
+    width: 75px;
+    right: 5%;
+    margin-top: -3px;
+    border-radius: 30px;
+}
+
+.container-categories{
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    padding: 20px 0;
+}
+
+    .container-categories .item{
+        border-radius: 15px;
+        height: 120px;
+        width: 113px;
+        background-color: #fff;
+        margin-right: 20px;
+        padding: 0 10px 25px 25px;
+    }
+
+    .container-categories::-webkit-scrollbar {
+        display: none;
+    }
+
+.icon{
+    height: 84px;
+    width: 84px;
+    position: relative;
+    top: -10px;
+    right: -20px;
+    border-radius: 15px;
+    text-align: center;
+}
+    .icon img{
+        padding-top: 25px;
+    }
+    .icon.dental{    
+        background-color: #4B7FFB;
+    }
+    .icon.heart{
+        background-color: #FFB167;
+    }
+    .icon.eye{
+        background-color: #F57E71;
+    }
+
+.doctor{
+    height: 87px;
+    display: flex;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+    .doctor img{
+        padding-right: 15px;
+    }
+    .doctor p{
+        margin-top: -10px;
+        font-size: 14px;
+    }
+    .doctor.heart{
+        background-color: rgba(255,177,103, 0.1);
+    }
+    .doctor.dental{
+        background-color: rgba(75,127,251, 0.1);
+    }
+
