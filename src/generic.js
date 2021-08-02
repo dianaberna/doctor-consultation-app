@@ -1,3 +1,5 @@
+import iconSearch from '../src/assets/images/search.svg';
+
 
 export function createContent(tag, text) {
     const isContent = document.createElement(tag);
@@ -11,11 +13,13 @@ export function printSearchBar(page){
     input.setAttribute("type","text");
     input.setAttribute("id","textSearch");
     input.setAttribute("placeholder","Search for doctors")
+    
     page.appendChild(input);
   
     var input = document.createElement("input");
     input.setAttribute("type","submit");
     input.setAttribute("id","submitSearch");
     input.setAttribute("value","");
+    input.style.cssText = `background-image: url(${iconSearch})`;
     page.appendChild(input);
 }

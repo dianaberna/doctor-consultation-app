@@ -12,7 +12,6 @@ body{
     padding: 0 20px 0 20px;
     height: 100vh;
     background-color: #F9F9F9;
-    background-image: url(./assets/images/Illustration1.png);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: contain;
@@ -81,7 +80,6 @@ p{
 }
 
 #submitSearch{
-    background-image: url(./assets/images/Illustration1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F57E71;

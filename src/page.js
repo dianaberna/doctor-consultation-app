@@ -2,18 +2,23 @@ import { createContent, printSearchBar } from './generic'
 import { printDoctorsList } from './doctor'
 import { printCategoriesList } from './categories';
 
+import bgImage from '../src/assets/images/bghome.png';
+
 export function getIntro(categoriesList, doctorsList){
     const page = document.createElement('div');
     page.className= "homepage";
+    page.id= "homepage"
+    page.style.cssText = `background-image: url(${bgImage})`;
     page.appendChild(createContent("h1", "Choose The Doctor You Want"));
     page.appendChild(createContent("p", "Lorem ipsum dolor amet, consectetur adipiscing inet deli"));
-    
+
     const button = document.createElement("button");
     button.className = "button";
 
     button.onclick = function() { contentPage("content", categoriesList, doctorsList); };
     button.appendChild(document.createTextNode("Get started"));
     page.appendChild(button);
+
     return page;
   }
 
