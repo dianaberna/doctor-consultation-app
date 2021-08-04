@@ -1,0 +1,116 @@
+#main__page{
+    background-color: #F9F9F9;
+    padding: 10px 20px;
+    margin-top: 50px;
+}
+
+#main__page__menu__profile{
+    right: 20px;
+    position: absolute;
+    top: 50px;
+}
+
+#search__input{
+    background-color: #F2F2F2;
+    border: 0px;
+    border-radius: 73px;
+    width: 90%;
+    height: 45px;
+    padding-left: 20px;
+}
+
+#search__submit{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F57E71;
+    border: 0;
+    position: absolute;
+    height: 53px;
+    width: 75px;
+    right: 5%;
+    margin-top: -3px;
+    border-radius: 30px;
+}
+
+#categories__list{
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    padding: 20px 0;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.categories__list--item{
+    border-radius: 15px;
+    height: 120px;
+    width: 113px;
+    background-color: #fff;
+    margin-right: 20px;
+    padding: 0 10px 25px 25px;
+    box-shadow: 1px 6px 11px rgba(0, 0, 0, 0.03);
+}
+
+.categories__list--icon{
+    height: 84px;
+    width: 84px;
+    position: relative;
+    top: -10px;
+    right: -20px;
+    border-radius: 15px;
+    text-align: center;
+    img{
+        padding-top: 25px;
+    }
+    &.dental{    
+        background-color: #4B7FFB;
+    }
+    &.heart{
+        background-color: #FFB167;
+    }
+    &.eye{
+        background-color: #F57E71;
+    }
+}
+
+
+.doctor__list{
+    width: 100%;
+    border: 0px;
+    height: 87px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: left;
+    img{
+        padding-right: 15px;
+        height: 65px;
+        margin-top: -5px;
+        margin-left: -20px;
+    }
+    p{
+        margin-top: -5px;
+        font-size: 14px;
+    }
+    &.heart{
+        background-color: rgba(255,177,103, 0.1);
+    }
+    &.dental{
+        background-color: rgba(75,127,251, 0.1);
+    }
+}
+
+#doctor__list--title{
+    display: flex;
+}
+
+#doctor__list--reset{
+    margin-top: -15px;
+    margin-left: 10px;
+}
+
+#doctor__list--details{
+    margin-left: 70px;
+    margin-top: -70px;
+}

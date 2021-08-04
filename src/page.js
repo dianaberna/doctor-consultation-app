@@ -1,3 +1,5 @@
+import './assets/css/intro__page.scss';
+
 import { createContent, printSearchBar, back, reset, generateMenu } from './generic'
 import { printDoctor, printDoctorsList, createBanner } from './doctor'
 import { printCategoriesList } from './categories';
@@ -12,14 +14,13 @@ export function getIntro(categoriesList, doctorsList){
   reset();
   const page = document.createElement('div');
   document.getElementById("content").appendChild(page);
-  page.className= "homepage";
-  page.id= "homepage"
+  page.id= "intro__page"
   page.style.cssText = `background-image: url(${bgImage}); background-position-y: 350px;`;
   page.appendChild(createContent("h1", "Choose The Doctor You Want"));
   page.appendChild(createContent("p", "Lorem ipsum dolor amet, consectetur adipiscing inet deli"));
 
   const button = document.createElement("button");
-  button.className = "button";
+  button.className = "btn btn__home";
   button.onclick = function() { getMainpage(categoriesList, doctorsList); };
   button.appendChild(document.createTextNode("Get started"));
   page.appendChild(button);
@@ -34,17 +35,17 @@ export function getMainpage(categoriesList, doctorsList) {
     // print title
     const page = document.createElement('div');
     document.getElementById("content").appendChild(page);
-    page.className= "mainpage";
+    page.id= "main__page";
 
     var div = document.createElement("div");
-    div.id = "menu-box";
+    div.id = "main__page__menu__box";
     var ul = document.createElement("ul");
-    ul.id="menu-element"
+    ul.id = "main__page__menu__item"
     
 
     var menuIcon = new Image(25, 25);
     menuIcon.src = menu;
-    menuIcon.id = "menu-bar";
+    menuIcon.id = "main__page__menu__bar";
     menuIcon.onclick = function(){
       generateMenu(ul, categoriesList, doctorsList);
     }
@@ -54,7 +55,7 @@ export function getMainpage(categoriesList, doctorsList) {
 
     var profileImage = new Image(50, 50);
     profileImage.src = profile;
-    profileImage.id = "profile";
+    profileImage.id = "main__page__menu__profile";
     div.appendChild(profileImage);
 
     page.appendChild(div);
@@ -72,10 +73,10 @@ export function getMainpage(categoriesList, doctorsList) {
   
     // top doctors section 
     // print title 
-    page.appendChild(createContent("h2", "Top Doctors", "title-doctor"));
+    page.appendChild(createContent("h2", "Top Doctors", "doctor__list--title")); //title-doctor
     // create div for lists of doctor
     var divcontainer = document.createElement("div");
-    divcontainer.id = "result-doctor";
+    divcontainer.id = "doctor__list--result"; //result-doctor
     // print all doctors
     printDoctorsList(divcontainer, categoriesList, doctorsList);
     page.appendChild(divcontainer);
@@ -87,14 +88,14 @@ export function getDoctor(doctor, categoriesList, doctorsList){
 
   const page = document.createElement('div');
   document.getElementById("content").appendChild(page);
-  page.className= "doctorPage";
+  page.className= "doctor__page";
 
   // print button for go back to precedent page
   page.appendChild(back(categoriesList, doctorsList));
 
   var otherIcon = new Image(25, 25);
   otherIcon.src = iconOther;
-  otherIcon.id = "other";  
+  otherIcon.id = "doctor__page__menu--other";  
   page.appendChild(otherIcon);
   // insert the banner with image
   page.appendChild(createBanner());

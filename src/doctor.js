@@ -1,3 +1,5 @@
+import './assets/css/doctor__page.scss';
+
 import { createContent } from './generic'
 import { getDoctor } from './page'
 
@@ -45,13 +47,13 @@ export function printDoctorsList(divcontainer, categoriesList, doctorsList){
   doctorsList.forEach(element => {
 
     const button = document.createElement("button");
-    button.className = "doctor "+element.classCSS;
+    button.className = "doctor__list "+element.classCSS;
     button.onclick = function() { getDoctor(element.id, categoriesList, doctorsList); };
 
     button.appendChild(printAvatarDoctor(element.id));
 
     var div = document.createElement("div");
-    div.className= "button-content";
+    div.id= "doctor__list--details"; //button-content
 
     div.appendChild(createContent("h2", "Dr. " + element.firstname+" "+element.lastname));
     div.appendChild(createContent("p", element.categories+" - "+element.workplace));
@@ -65,7 +67,7 @@ export function printDoctorsList(divcontainer, categoriesList, doctorsList){
 
 function printUpcomingSchedules(){
   const div = document.createElement('div');
-  div.className = "upcoming-schedules";
+  div.className = "doctor__upcoming-schedules";
 
   var image = new Image(325, 87);
   image.src = consultation1;
@@ -83,10 +85,10 @@ export function printDoctor(doctorsList, id){
     .filter(doc => doc.id === id);
 
   const divcontent = document.createElement('div');
-  divcontent.className= "doctorpage-content";
+  divcontent.className= "doctor__page--content"; //doctorpage-content
 
   const divdetails = document.createElement('div');
-  divdetails.className= "doctorpage-details";
+  divdetails.className= "doctor__page--details"; //doctorpage-details
 
   divdetails.appendChild(printAvatarDoctor(id));
   
@@ -112,8 +114,9 @@ export function printDoctor(doctorsList, id){
 
 export function createBanner(){
   const div = document.createElement('div');
-  div.className= "doctorpage-image";
-  div.id= "doctorpage-image"
+  div.className= "doctor__page--image"; //doctorpage-image
+ // div.id= "doctorpage-image" //doctorpage-image
   div.style.cssText = `background-image: url(${bgDoctor})`;
   return div;
 }
+

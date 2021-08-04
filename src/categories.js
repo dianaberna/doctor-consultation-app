@@ -1,3 +1,5 @@
+import './assets/css/main__page.scss';
+
 import { createContent, resetDoctorList } from './generic'
 import { printDoctorsList } from './doctor'
 
@@ -23,7 +25,7 @@ function categoriesSearch(categoriesList, doctorList, id){
 
   resetDoctorList(categoriesList, doctorList);
 
-  var page = document.getElementById("result-doctor");
+  var page = document.getElementById("doctor__list--result");
   page.innerHTML = "";
   if(result.length == 0){
     page.appendChild(createContent("p", "No results"));
@@ -35,17 +37,17 @@ function categoriesSearch(categoriesList, doctorList, id){
 export function printCategoriesList(page, categoriesList, doctorList){
   
   var div = document.createElement("div");
-  div.className= "container-categories";
+  div.id= "categories__list";
   
   categoriesList.forEach(element => {
     var item = document.createElement("div")
-    item.className = "item";
+    item.className = "categories__list--item";
     item.onclick = function(){ categoriesSearch(categoriesList, doctorList, element.id);}
 
     var icon = document.createElement("div");
-    icon.className = "icon "+element.classCSS;
+    icon.className = "categories__list--icon "+element.classCSS;
 
-    var image = new Image(50, 50);
+    var image = new Image(35, 35);
     image.src = getIcon(element.id);
     icon.appendChild(image);
 
