@@ -8,7 +8,7 @@ body{
 }
 
 .homepage{
-    margin: 0;
+
     padding: 0 20px 0 20px;
     height: 100vh;
     background-color: #F9F9F9;
@@ -16,10 +16,65 @@ body{
     background-position: left bottom;
     background-size: contain;
     background-attachment: fixed;
+    margin-top: 100px;
+    position: fixed;
+}
+
+
+.doctorpage-image{
+    margin: 0;
+    padding: 0 20px 0 20px;
+    height: 293px;
+    background-color: #F9F9F9;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.doctorpage-content{
+    border-radius: 30px 30px 0 0;
+    padding: 40px 20px;
+    margin-top: -80px;
+    background-color: #F9F9F9;
+}
+
+.doctorpage-details{
+    display: flex;
+}
+    .doctorpage-details .avatar{
+        height: 107px;
+        
     }
-.getstarted{
+    
+    .doctorpage-details p{
+        margin-top: -10px;
+    }
+
+    .doctorpage-details div img{
+        padding-right: 15px;
+    }
+
+#title-doctor{
+    display: flex;
+}
+
+#reset-doctor{
+    margin-top: -15px;
+    margin-left: 10px;
+}
+
+
+.mainpage{
     background-color: #F9F9F9;
     padding: 10px 20px;
+    margin-top: 50px;
+}
+
+#profile{
+    right: 20px;
+    position: absolute;
+    top: 50px;
 }
 
 .container{
@@ -36,6 +91,7 @@ body{
         float: right;
     }  
 
+
 h1{
     color: #1e1c61;
     font-size: 30px;
@@ -51,6 +107,17 @@ h3{
     font-size: 16px;
     font-weight: 400;
     margin-top: 0;
+}
+
+.doctorPage h2{
+    color: #1e1c61;
+    font-size: 18px;
+    font-weight: 700;
+}
+.doctorPage p{
+    color: #666797;
+    font-size: 14px;
+    margin-top: -15px;
 }
 p{
     color: rgba(30,28,97, 0.65);
@@ -79,7 +146,29 @@ p{
     padding-left: 20px;
 }
 
-#submitSearch{
+#back, #other{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: 0;
+    position: fixed;
+    top: 22px;
+    left: 5%;
+}
+
+#other{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    position: fixed;
+    height: 20px;
+    left: 90%;
+    top: 20px;
+}
+
+
+
+#submitSearch, .back{
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F57E71;
@@ -106,6 +195,7 @@ p{
         background-color: #fff;
         margin-right: 20px;
         padding: 0 10px 25px 25px;
+        box-shadow: 1px 6px 11px rgba(0, 0, 0, 0.03);
     }
 
     .container-categories::-webkit-scrollbar {
@@ -135,17 +225,22 @@ p{
     }
 
 .doctor{
+    width: 100%;
+    border: 0px;
     height: 87px;
-    display: flex;
     border-radius: 20px;
     margin-bottom: 20px;
     padding: 15px;
+    text-align: left;
 }
     .doctor img{
         padding-right: 15px;
+        height: 65px;
+        margin-top: -5px;
+        margin-left: -20px;
     }
     .doctor p{
-        margin-top: -10px;
+        margin-top: -5px;
         font-size: 14px;
     }
     .doctor.heart{
@@ -155,3 +250,7 @@ p{
         background-color: rgba(75,127,251, 0.1);
     }
 
+    .button-content{
+        margin-left: 70px;
+        margin-top: -70px;
+    }

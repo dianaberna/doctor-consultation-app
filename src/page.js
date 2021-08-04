@@ -1,52 +1,103 @@
-import { createContent, printSearchBar } from './generic'
-import { printDoctorsList } from './doctor'
+import { createContent, printSearchBar, back, reset, generateMenu } from './generic'
+import { printDoctor, printDoctorsList, createBanner } from './doctor'
 import { printCategoriesList } from './categories';
+import iconOther from '../src/assets/images/other.svg';
 
 import bgImage from '../src/assets/images/bghome.png';
+import menu from '../src/assets/images/menu-bar.svg';
+import profile from '../src/assets/images/profile.svg';
 
+// print intro page of app
 export function getIntro(categoriesList, doctorsList){
-    const page = document.createElement('div');
-    page.className= "homepage";
-    page.id= "homepage"
-    page.style.cssText = `background-image: url(${bgImage})`;
-    page.appendChild(createContent("h1", "Choose The Doctor You Want"));
-    page.appendChild(createContent("p", "Lorem ipsum dolor amet, consectetur adipiscing inet deli"));
+  reset();
+  const page = document.createElement('div');
+  document.getElementById("content").appendChild(page);
+  page.className= "homepage";
+  page.id= "homepage"
+  page.style.cssText = `background-image: url(${bgImage}); background-position-y: 350px;`;
+  page.appendChild(createContent("h1", "Choose The Doctor You Want"));
+  page.appendChild(createContent("p", "Lorem ipsum dolor amet, consectetur adipiscing inet deli"));
 
-    const button = document.createElement("button");
-    button.className = "button";
+  const button = document.createElement("button");
+  button.className = "button";
+  button.onclick = function() { getMainpage(categoriesList, doctorsList); };
+  button.appendChild(document.createTextNode("Get started"));
+  page.appendChild(button);
 
-    button.onclick = function() { contentPage("content", categoriesList, doctorsList); };
-    button.appendChild(document.createTextNode("Get started"));
-    page.appendChild(button);
-
-    return page;
-  }
-
-
-  
-// TODO new page for doctor details
-export function getDoctor(doctor){
-  // reset page
-  document.getElementById("content").innerHTML = "";
+  return page;
 }
 
-function contentPage(id, categoriesList, doctorsList) {
-    // reset page
-    document.getElementById(id).innerHTML = "";
+// print the main page
+export function getMainpage(categoriesList, doctorsList) {
+    reset();
   
     // print title
     const page = document.createElement('div');
-    document.getElementById(id).appendChild(page);
-    page.className= "getstarted";
+    document.getElementById("content").appendChild(page);
+    page.className= "mainpage";
+
+    var div = document.createElement("div");
+    div.id = "menu-box";
+    var ul = document.createElement("ul");
+    ul.id="menu-element"
+    
+
+    var menuIcon = new Image(25, 25);
+    menuIcon.src = menu;
+    menuIcon.id = "menu-bar";
+    menuIcon.onclick = function(){
+      generateMenu(ul, categoriesList, doctorsList);
+    }
+    div.appendChild(menuIcon);
+    div.appendChild(ul)
+    
+
+    var profileImage = new Image(50, 50);
+    profileImage.src = profile;
+    profileImage.id = "profile";
+    div.appendChild(profileImage);
+
+    page.appendChild(div);
+
     page.appendChild(createContent("h1", "Find Your Desired Doctor"));
   
     // print search bar and button
-    printSearchBar(page);
+    printSearchBar(page, categoriesList, doctorsList);
   
     // categories section
-    printCategoriesList(page, categoriesList);
+    // print title 
+    page.appendChild(createContent("h2", "Categories"));
+    // print all categories
+    printCategoriesList(page, categoriesList, doctorsList);
   
     // top doctors section 
-    printDoctorsList(page, doctorsList);
-    
-  }
+    // print title 
+    page.appendChild(createContent("h2", "Top Doctors", "title-doctor"));
+    // create div for lists of doctor
+    var divcontainer = document.createElement("div");
+    divcontainer.id = "result-doctor";
+    // print all doctors
+    printDoctorsList(divcontainer, categoriesList, doctorsList);
+    page.appendChild(divcontainer);
+}
+
+// print the doctor details page
+export function getDoctor(doctor, categoriesList, doctorsList){
+  reset();
+
+  const page = document.createElement('div');
+  document.getElementById("content").appendChild(page);
+  page.className= "doctorPage";
+
+  // print button for go back to precedent page
+  page.appendChild(back(categoriesList, doctorsList));
+
+  var otherIcon = new Image(25, 25);
+  otherIcon.src = iconOther;
+  otherIcon.id = "other";  
+  page.appendChild(otherIcon);
+  // insert the banner with image
+  page.appendChild(createBanner());
+  // print all doctor details
+  page.appendChild(printDoctor(doctorsList, doctor));
+}
