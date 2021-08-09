@@ -64,13 +64,13 @@ export function printSearchBar(page, categoriesList,  doctorsList){
 
     var input = document.createElement("input");
     input.setAttribute("type","text");
-    input.setAttribute("id","search__input"); //textSearch
+    input.setAttribute("id","search__input");
     input.setAttribute("placeholder","Search for doctors")
     page.appendChild(input);
   
     var input = document.createElement("input");
     input.setAttribute("type","submit");
-    input.setAttribute("id","search__submit"); //submitSearch
+    input.setAttribute("id","search__submit"); 
     input.setAttribute("value","");
     input.onclick = function(){ 
         search(categoriesList, doctorsList);
@@ -94,25 +94,22 @@ export function reset(){
     document.getElementById("content").innerHTML = "";
 }
 
-
-// hide menu
-function closeMenu(ul){
+function hideMenu(ul){
     document.getElementById("main__page__menu__item").style.display = "none"
     var buttonMenu = document.getElementById("main__page__menu__bar");
-    buttonMenu.onclick = function(){openMenu();}
+    buttonMenu.onclick = function(){showMenu();}
 }
   
-// show menu
-function openMenu(ul){
+function showMenu(ul){
     document.getElementById("main__page__menu__item").style.display = "block";
     var buttonMenu = document.getElementById("main__page__menu__bar");
     buttonMenu.onclick = function(){
-        closeMenu(ul);
+        hideMenu(ul);
     }
 }
   
 export function generateMenu(ul, categoriesList, doctorsList){
-    openMenu(ul);
+    showMenu(ul);
     var li = document.createElement("li");
     var span = document.createElement("span");
     var text = document.createTextNode("Get started");
@@ -123,3 +120,11 @@ export function generateMenu(ul, categoriesList, doctorsList){
     li.appendChild(span);
     ul.appendChild(li);
 }
+
+export function newImage(w, h, src, id, classCss){
+    var image = new Image(w,h);
+    image.src = src;
+    image.id = id;
+    image.class = classCss;
+    return image;
+  }

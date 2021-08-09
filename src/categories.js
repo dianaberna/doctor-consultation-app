@@ -1,6 +1,6 @@
 import './assets/css/main__page.scss';
 
-import { createContent, resetDoctorList } from './generic'
+import { createContent, resetDoctorList, newImage } from './generic'
 import { printDoctorsList } from './doctor'
 
 import iconDental from '../src/assets/images/dental.png';
@@ -47,9 +47,7 @@ export function printCategoriesList(page, categoriesList, doctorList){
     var icon = document.createElement("div");
     icon.className = "categories__list--icon "+element.classCSS;
 
-    var image = new Image(35, 35);
-    image.src = getIcon(element.id);
-    icon.appendChild(image);
+    icon.appendChild(newImage(35, 35, getIcon(element.id), element.id));
 
     item.appendChild(icon);
     item.appendChild(createContent("h3",element.name))

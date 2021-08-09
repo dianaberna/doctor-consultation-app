@@ -1,11 +1,11 @@
 import './assets/css/doctor__page.scss';
 
-import { createContent } from './generic'
+import { createContent, newImage } from './generic'
 import { getDoctor } from './page'
 
-import avatar1 from '../src/assets/images/avatar1.svg';
-import avatar2 from '../src/assets/images/avatar2.svg';
-import avatar3 from '../src/assets/images/avatar3.svg';
+import avatar0 from '../src/assets/images/avatar1.svg';
+import avatar1 from '../src/assets/images/avatar2.svg';
+import avatar2 from '../src/assets/images/avatar3.svg';
 
 import iconTel from '../src/assets/images/tel.png';
 import iconEmail from '../src/assets/images/email.png';
@@ -16,30 +16,9 @@ import bgDoctor from '../src/assets/images/bgdoctor.png';
 import consultation1 from '../src/assets/images/cons1.png';
 import consultation2 from '../src/assets/images/cons2.png';
 
-// TODO: improve
-function getAvatar(id){
-  switch(id){
-    case 1: return avatar1;
-    case 2: return avatar2;
-    case 3: return avatar3;
-  }
-}
-
-export function printAvatarDoctor(id){
-  var image = new Image(100, 100);
-  image.src = getAvatar(id);
-  image.class = "avatar"
-  return image;
-}
-
-export function printIcon(name){
-  var image = new Image(35, 35);
-  switch(name){
-    case "tel": image.src = iconTel; break;
-    case "email": image.src = iconEmail; break;
-    case "call": image.src = iconCall; break;
-  }
-  return image
+function printAvatarDoctor(div, id){
+  const avatar = [avatar0, avatar1, avatar2];
+  return div.appendChild(newImage(100, 100, avatar[id-1], "", "avatar"))
 }
 
 export function printDoctorsList(divcontainer, categoriesList, doctorsList){
@@ -50,10 +29,10 @@ export function printDoctorsList(divcontainer, categoriesList, doctorsList){
     button.className = "doctor__list "+element.classCSS;
     button.onclick = function() { getDoctor(element.id, categoriesList, doctorsList); };
 
-    button.appendChild(printAvatarDoctor(element.id));
+    printAvatarDoctor(button, element.id);
 
     var div = document.createElement("div");
-    div.id= "doctor__list--details"; //button-content
+    div.id= "doctor__list--details"; 
 
     div.appendChild(createContent("h2", "Dr. " + element.firstname+" "+element.lastname));
     div.appendChild(createContent("p", element.categories+" - "+element.workplace));
@@ -62,20 +41,16 @@ export function printDoctorsList(divcontainer, categoriesList, doctorsList){
     divcontainer.appendChild(button);
     
   });
-
 }
 
 function printUpcomingSchedules(){
   const div = document.createElement('div');
   div.className = "doctor__upcoming-schedules";
 
-  var image = new Image(325, 87);
-  image.src = consultation1;
-  div.appendChild(image);
+  div.appendChild(createContent("h2", "Upcoming Schedules"));
 
-  var image = new Image(325, 87);
-  image.src = consultation2;
-  div.appendChild(image);
+  div.appendChild(newImage(325, 87, consultation1));
+  div.appendChild(newImage(325, 87, consultation2));
 
   return div;
 }
@@ -85,21 +60,22 @@ export function printDoctor(doctorsList, id){
     .filter(doc => doc.id === id);
 
   const divcontent = document.createElement('div');
-  divcontent.className= "doctor__page--content"; //doctorpage-content
+  divcontent.className= "doctor__page--content"; 
 
   const divdetails = document.createElement('div');
-  divdetails.className= "doctor__page--details"; //doctorpage-details
+  divdetails.className= "doctor__page--details"; 
 
-  divdetails.appendChild(printAvatarDoctor(id));
+  printAvatarDoctor(divdetails, id);
   
   const divdata = document.createElement('div');
   divdata.appendChild(createContent("h2", "Dr. "+result[0].firstname+" "+result[0].lastname));
   divdata.appendChild(createContent("p", result[0].categories+" - "+result[0].workplace));
 
-  divdata.appendChild(printIcon("tel"));
-  divdata.appendChild(printIcon("email"));
-  divdata.appendChild(printIcon("call"));
-  
+  const name = [iconTel, iconEmail, iconCall]
+  name.forEach(elem =>
+    divdata.appendChild(newImage(35, 35, elem))
+  );
+
   divdetails.appendChild(divdata);
   divcontent.appendChild(divdetails);
 
@@ -114,8 +90,7 @@ export function printDoctor(doctorsList, id){
 
 export function createBanner(){
   const div = document.createElement('div');
-  div.className= "doctor__page--image"; //doctorpage-image
- // div.id= "doctorpage-image" //doctorpage-image
+  div.className= "doctor__page--image";
   div.style.cssText = `background-image: url(${bgDoctor})`;
   return div;
 }

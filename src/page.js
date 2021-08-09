@@ -1,6 +1,6 @@
 import './assets/css/intro__page.scss';
 
-import { createContent, printSearchBar, back, reset, generateMenu } from './generic'
+import { createContent, printSearchBar, back, reset, generateMenu, newImage } from './generic'
 import { printDoctor, printDoctorsList, createBanner } from './doctor'
 import { printCategoriesList } from './categories';
 import iconOther from '../src/assets/images/other.svg';
@@ -31,17 +31,16 @@ export function getIntro(categoriesList, doctorsList){
 // print the main page
 export function getMainpage(categoriesList, doctorsList) {
     reset();
-  
-    // print title
+
     const page = document.createElement('div');
     document.getElementById("content").appendChild(page);
     page.id= "main__page";
 
+    // print menu 
     var div = document.createElement("div");
     div.id = "main__page__menu__box";
     var ul = document.createElement("ul");
-    ul.id = "main__page__menu__item"
-    
+    ul.id = "main__page__menu__item";
 
     var menuIcon = new Image(25, 25);
     menuIcon.src = menu;
@@ -50,13 +49,9 @@ export function getMainpage(categoriesList, doctorsList) {
       generateMenu(ul, categoriesList, doctorsList);
     }
     div.appendChild(menuIcon);
-    div.appendChild(ul)
+    div.appendChild(ul);
     
-
-    var profileImage = new Image(50, 50);
-    profileImage.src = profile;
-    profileImage.id = "main__page__menu__profile";
-    div.appendChild(profileImage);
+    div.appendChild(newImage(50, 50, profile, "main__page__menu__profile"));
 
     page.appendChild(div);
 
