@@ -32,3 +32,4 @@ The following are the requirements to be met:
 * Analyze and test the proper functioning of the app with and without Browsersync
 
 ### The project was carried out within the TomorrowDevs training course
+![td logo](./src/td-logo.png)
