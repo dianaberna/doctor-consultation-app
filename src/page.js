@@ -25,6 +25,10 @@ export function getIntro(categoriesList, doctorsList){
   button.appendChild(document.createTextNode("Get started"));
   page.appendChild(button);
 
+  if( screen.width > 767){
+    alert("It is advisable to view the site from mobile")
+  }
+
   return page;
 }
 

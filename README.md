@@ -1,6 +1,8 @@
-# Mobile UI App
 
-## Doctor Consultation App
+
+# Doctor Consultation App - Mobile UI 
+
+## Requirement
 
 The goal of this project is to recreate the UI made in Figma using flexbox and adding animations / transitions.
 The following are the requirements to be met:
@@ -17,12 +19,15 @@ The following are the requirements to be met:
 * Deploy the project towards Netlify (www.netlify.com) connected to your GitHub Repo
 * After the project is deployed, analyze it with https://web.dev
 
-## Estimates of execution times
-* Recreate the static layout (2h) (index and getstarted page)
-* Upload doctors data with js
-* Add animations and links (1h)
-* Add alert for desktop (30m)
-* Realize the search function doctor (30m)
-* Analyze and test the proper functioning of the app (1h)
+![mobile ui](./src/Doctor-Consultation-App-Free-Figma-UI-Kit.jpeg)
+
+## List of tasks
+* Recreate the static layout (index, getstarted page and doctor page)
+* Add alert for desktop view 
+* Upload json doctors and categories data and use OOP
+* Add webpack 
+* Realize the search function doctor 
+* Realize the filter function for categories section
+* Analyze and test the proper functioning of the app with and without Browsersync
 
 ### The project was carried out within the TomorrowDevs training course
