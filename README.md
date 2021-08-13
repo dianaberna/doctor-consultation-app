@@ -1,6 +1,6 @@
 
 
-# Doctor Consultation App - Mobile UI 
+# Doctor Consultation App - Mobile UI <img src="./src/td-logo.png" alt="td logo" width="30"/>
 
 [Deploy link](https://doctor-consultation-app.netlify.app/)
 ## Requirement
@@ -32,4 +32,3 @@ The following are the requirements to be met:
 * Analyze and test the proper functioning of the app with and without Browsersync
 
 ### The project was carried out within the TomorrowDevs training course
-![td logo](./src/td-logo.png)
