@@ -45,4 +45,3 @@ The following are the requirements to be met:
 * Reorganize files/folders
 * Refactoring readme
 
-## The project was carried out within the TomorrowDevs training course
