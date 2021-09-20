@@ -3,6 +3,14 @@
 # Doctor Consultation App - Mobile UI <img src="./src/td-logo.png" alt="td logo" width="30"/>
 
 [Deploy link](https://doctor-consultation-app.netlify.app/)
+## About the project
+The project was done within the TomorrowDevs mentoring course and consists of replicating the mobile UI of the Doctor Consultation app using an OOP development methodology.
+
+### Built With
+- Javascript ES6
+- Webpack
+- Sass
+
 ## Requirement
 
 The goal of this project is to recreate the UI made in Figma using flexbox and adding animations / transitions.
@@ -22,10 +30,11 @@ The following are the requirements to be met:
 
 ![mobile ui](./src/Doctor-Consultation-App-Free-Figma-UI-Kit.jpeg)
 
-## List of tasks
-* Recreate the static layout (index, getstarted page and doctor page)
+## Tasks executed
+* Recreate the static layout css class (index, getstarted page and doctor page)
 * Add alert for desktop view 
-* Upload json doctors and categories data and use OOP
+* Upload json doctors and categories data
+* Create doctor and categories class
 * Add webpack 
 * Realize the search function doctor 
 * Realize the filter function for categories section
