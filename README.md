@@ -1,8 +1,7 @@
 
 
 # Doctor Consultation App - Mobile UI <img src="./src/td-logo.png" alt="td logo" width="30"/>
-
-[Deploy link](https://doctor-consultation-app.netlify.app/)
+To view the site online it is available here [deploy link](https://doctor-consultation-app.netlify.app/)
 ## About the project
 The project was done within the TomorrowDevs mentoring course and consists of replicating the mobile UI of the Doctor Consultation app using an OOP development methodology.
 
@@ -18,12 +17,10 @@ The following are the requirements to be met:
 * Respect exactly the provided layout
 * If visiting the page on a Desktop, show an alert to the user that says to check the same page from a Mobile Device
 * Provide the Mobile experience of Scrolling and Navigation of Details
-
 * Details of the Doctors are mocked (e.g. No API is needed)
 * The search input should filter the doctors by name
 * Each Category should filter the doctors
 * By clicking on a Doctor name, the user should see the details
-
 * Test the layout on a real mobile device (check Browsersync for this)
 * Deploy the project towards Netlify (www.netlify.com) connected to your GitHub Repo
 * After the project is deployed, analyze it with https://web.dev
