@@ -40,4 +40,9 @@ The following are the requirements to be met:
 * Realize the filter function for categories section
 * Analyze and test the proper functioning of the app with and without Browsersync
 
-### The project was carried out within the TomorrowDevs training course
+### Refactoring Tasks
+* Use only ES6
+* Reorganize files/folders
+* Refactoring readme
+
+## The project was carried out within the TomorrowDevs training course
