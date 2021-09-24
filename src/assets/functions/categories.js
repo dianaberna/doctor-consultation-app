@@ -4,7 +4,8 @@ import { createContent, newImage, getIcon } from './utils'
 import { categoriesSearch } from './searchbar';
 
 import categoriesJson from '../categories.json';
-import Category from '../../class/Category';
+
+import Category from '../class/Category';
 
 
 export function createCategoriesList() {

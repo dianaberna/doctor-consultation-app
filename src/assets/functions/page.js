@@ -23,7 +23,7 @@ export function getIntro(categoriesList, doctorsList){
 
   const button = document.createElement("button");
   button.className = "btn btn__home";
-  button.onclick = function() { getMainpage(categoriesList, doctorsList); };
+  button.onclick = function() { }; //getMainpage(categoriesList, doctorsList); 
   button.appendChild(document.createTextNode("Get started"));
   page.appendChild(button);
 
@@ -36,7 +36,7 @@ export function getIntro(categoriesList, doctorsList){
 
 // print the main page
 export function getMainpage(categoriesList, doctorsList) {
-    reset();
+    //reset();
 
     const page = document.createElement('div');
     document.getElementById("content").appendChild(page);

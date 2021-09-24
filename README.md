@@ -9,6 +9,7 @@ The project was done within the TomorrowDevs mentoring course and consists of re
 - Javascript ES6
 - Webpack
 - Sass
+- EJS
 
 ## Requirement
 

@@ -1,7 +1,11 @@
+import { getIntro } from '../functions/page'
+
 function hideMenu(ul){
     document.getElementById("main__page__menu__item").style.display = "none"
     let buttonMenu = document.getElementById("main__page__menu__bar");
-    buttonMenu.onclick = function(){showMenu();}
+    buttonMenu.onclick = function(){
+        showMenu();
+    }
 }
   
 function showMenu(ul){

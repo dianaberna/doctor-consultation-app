@@ -1,18 +1,18 @@
 import '../css/doctor__page.scss';
 
-import { createContent, newImage, printUpcomingSchedules } from './utils'
+import { createContent, newImage, printUpcomingSchedules, removeAllChildNodes } from './utils'
 import { getDoctor } from '../functions/page'
 
 import avatar0 from '../images/avatar1.svg';
 import avatar1 from '../images/avatar2.svg';
 import avatar2 from '../images/avatar3.svg';
-
 import iconTel from '../images/tel.png';
 import iconEmail from '../images/email.png';
 import iconCall from '../images/call.png';
 
 import doctorsJson from '../doctors.json';
-import Doctor from '../../class/Doctor';
+
+import Doctor from '../class/Doctor';
 
 export function createDoctorsList() {
   const listDoctors = doctorsJson.doctorsList;

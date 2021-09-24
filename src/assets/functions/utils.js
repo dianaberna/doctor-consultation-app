@@ -1,13 +1,10 @@
 import { getMainpage } from './page'
 
 import iconBack from '../images/back.svg';
-
 import bgDoctor from '../images/bgdoctor.png';
-
 import iconDental from '../images/dental.png';
 import iconHeart from '../images/heart.svg';
 import iconEye from '../images/eye.svg';
-
 import consultation1 from '../images/cons1.png';
 import consultation2 from '../images/cons2.png';
 

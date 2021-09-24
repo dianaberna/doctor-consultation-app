@@ -1,4 +1,6 @@
 import { printDoctorsList, resetDoctorList } from '../functions/doctor'
+import { createContent } from '../functions/utils'
+
 import iconSearch from '../images/search.svg';
 
 function search(categoriesList, doctorsList){
@@ -12,7 +14,7 @@ function search(categoriesList, doctorsList){
     page.innerHTML = "";
     input.value = "";
 
-    if(result.length == 0){
+    if(result.length === 0){
         page.appendChild(createContent("p", "No results"));
     }else{  
         printDoctorsList(page, categoriesList, result);
@@ -41,18 +43,23 @@ export function printSearchBar(page, categoriesList,  doctorsList){
 export function categoriesSearch(categoriesList, doctorList, id){
 
     let resultcat = categoriesList
-      .filter(cat => cat.id === id);
+      .find(cat => cat.id === id);
     
     let result = doctorList
-      .filter(doc => doc.categories == resultcat[0].name)
+      .filter(doc => doc.categories === resultcat.name)
   
+    printResultSearch(result, categoriesList, doctorList)
+}
+
+function printResultSearch(result, categoriesList, doctorList){
+
     resetDoctorList(categoriesList, doctorList);
   
     let page = document.getElementById("doctor__list--result");
     page.innerHTML = "";
-    if(result.length == 0){
+    if(result.length === 0){
       page.appendChild(createContent("p", "No results"));
     }else{  
         printDoctorsList(page, categoriesList, result);
     }
-  }
+}
