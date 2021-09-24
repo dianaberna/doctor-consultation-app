@@ -1,13 +1,13 @@
-import './assets/css/intro__page.scss';
+import '../css/intro__page.scss';
 
 import { createContent, printSearchBar, back, reset, generateMenu, newImage } from './generic'
 import { printDoctor, printDoctorsList, createBanner } from './doctor'
 import { printCategoriesList } from './categories';
-import iconOther from '../src/assets/images/other.svg';
+import iconOther from '../images/other.svg';
 
-import bgImage from '../src/assets/images/bghome.png';
-import menu from '../src/assets/images/menu-bar.svg';
-import profile from '../src/assets/images/profile.svg';
+import bgImage from '../images/bghome.png';
+import menu from '../images/menu-bar.svg';
+import profile from '../images/profile.svg';
 
 // print intro page of app
 export function getIntro(categoriesList, doctorsList){
@@ -41,12 +41,12 @@ export function getMainpage(categoriesList, doctorsList) {
     page.id= "main__page";
 
     // print menu 
-    var div = document.createElement("div");
+    let div = document.createElement("div");
     div.id = "main__page__menu__box";
-    var ul = document.createElement("ul");
+    let ul = document.createElement("ul");
     ul.id = "main__page__menu__item";
 
-    var menuIcon = new Image(25, 25);
+    let menuIcon = new Image(25, 25);
     menuIcon.src = menu;
     menuIcon.id = "main__page__menu__bar";
     menuIcon.onclick = function(){
@@ -74,7 +74,7 @@ export function getMainpage(categoriesList, doctorsList) {
     // print title 
     page.appendChild(createContent("h2", "Top Doctors", "doctor__list--title")); //title-doctor
     // create div for lists of doctor
-    var divcontainer = document.createElement("div");
+    let divcontainer = document.createElement("div");
     divcontainer.id = "doctor__list--result"; //result-doctor
     // print all doctors
     printDoctorsList(divcontainer, categoriesList, doctorsList);
@@ -92,7 +92,7 @@ export function getDoctor(doctor, categoriesList, doctorsList){
   // print button for go back to precedent page
   page.appendChild(back(categoriesList, doctorsList));
 
-  var otherIcon = new Image(25, 25);
+  let otherIcon = new Image(25, 25);
   otherIcon.src = iconOther;
   otherIcon.id = "doctor__page__menu--other";  
   page.appendChild(otherIcon);

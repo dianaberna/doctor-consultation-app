@@ -1,11 +1,23 @@
-import './assets/css/main__page.scss';
+import '../css/main__page.scss';
 
 import { createContent, resetDoctorList, newImage } from './generic'
 import { printDoctorsList } from './doctor'
 
-import iconDental from '../src/assets/images/dental.png';
-import iconHeart from '../src/assets/images/heart.svg';
-import iconEye from '../src/assets/images/eye.svg';
+import iconDental from '../images/dental.png';
+import iconHeart from '../images/heart.svg';
+import iconEye from '../images/eye.svg';
+
+
+import categoriesJson from '../categories.json';
+import Category from '../../class/Category';
+
+
+export function createCategoriesList() {
+  const listCategories = categoriesJson.categoriesList;
+  return listCategories.map( function(category) {
+      return new Category(category.id, category.name, category.image, category.classCSS)
+  })
+}
 
 function getIcon(id){
   switch(id){
@@ -17,15 +29,15 @@ function getIcon(id){
 
 function categoriesSearch(categoriesList, doctorList, id){
 
-  var resultcat = categoriesList
+  let resultcat = categoriesList
     .filter(cat => cat.id === id);
   
-  var result = doctorList
+  let result = doctorList
     .filter(doc => doc.categories == resultcat[0].name)
 
   resetDoctorList(categoriesList, doctorList);
 
-  var page = document.getElementById("doctor__list--result");
+  let page = document.getElementById("doctor__list--result");
   page.innerHTML = "";
   if(result.length == 0){
     page.appendChild(createContent("p", "No results"));
@@ -36,15 +48,15 @@ function categoriesSearch(categoriesList, doctorList, id){
 
 export function printCategoriesList(page, categoriesList, doctorList){
   
-  var div = document.createElement("div");
+  let div = document.createElement("div");
   div.id= "categories__list";
   
   categoriesList.forEach(element => {
-    var item = document.createElement("div")
+    let item = document.createElement("div")
     item.className = "categories__list--item";
     item.onclick = function(){ categoriesSearch(categoriesList, doctorList, element.id);}
 
-    var icon = document.createElement("div");
+    let icon = document.createElement("div");
     icon.className = "categories__list--icon "+element.classCSS;
 
     icon.appendChild(newImage(35, 35, getIcon(element.id), element.id));

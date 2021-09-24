@@ -1,8 +1,8 @@
 import { getMainpage, getIntro } from './page'
 import { printDoctorsList } from './doctor';
 
-import iconSearch from '../src/assets/images/search.svg';
-import iconBack from '../src/assets/images/back.svg';
+import iconSearch from '../images/search.svg';
+import iconBack from '../images/back.svg';
 
 
 export function createContent(tag, text, id) {
@@ -13,13 +13,13 @@ export function createContent(tag, text, id) {
 }
 
 function search(categoriesList, doctorsList){
-    var input = document.getElementById("search__input");
+    let input = document.getElementById("search__input");
 
-    var result = doctorsList
+    let result = doctorsList
         .filter(doc => doc.firstname.toLowerCase() === input.value.toLowerCase());
 
     resetDoctorList(categoriesList, doctorsList);
-    var page = document.getElementById("doctor__list--result");
+    let page = document.getElementById("doctor__list--result");
     page.innerHTML = "";
     input.value = "";
 
@@ -37,24 +37,24 @@ export function removeAllChildNodes(parent) {
 }
 
 export function resetDoctorList(categoriesList, doctorsList){
-    var title = document.getElementById("doctor__list--title");
+    let title = document.getElementById("doctor__list--title");
     // delete precedent reset button
     removeAllChildNodes(title);
     // rewrite title of doctors list
     title.appendChild(createContent("h2", "Top Doctors"));
     // create reset button 
-    var input = document.createElement("input");
+    let input = document.createElement("input");
     input.setAttribute("type", "button");
     input.setAttribute("id", "doctor__list--reset");
     input.setAttribute("class", "btn")
     input.setAttribute("value", "reset");
     input.onclick = function(){
         // clean doctor list
-        var page = document.getElementById("doctor__list--result");
+        let page = document.getElementById("doctor__list--result");
         page.innerHTML = "";
         printDoctorsList(page, categoriesList, doctorsList);
         // remove reset button
-        var button = document.getElementById("doctor__list--reset");
+        let button = document.getElementById("doctor__list--reset");
         title.removeChild(button)
     }
     title.appendChild(input);
@@ -62,13 +62,13 @@ export function resetDoctorList(categoriesList, doctorsList){
 
 export function printSearchBar(page, categoriesList,  doctorsList){
 
-    var input = document.createElement("input");
+    let input = document.createElement("input");
     input.setAttribute("type","text");
     input.setAttribute("id","search__input");
     input.setAttribute("placeholder","Search for doctors")
     page.appendChild(input);
   
-    var input = document.createElement("input");
+    input = document.createElement("input");
     input.setAttribute("type","submit");
     input.setAttribute("id","search__submit"); 
     input.setAttribute("value","");
@@ -81,7 +81,7 @@ export function printSearchBar(page, categoriesList,  doctorsList){
 
 export function back(categoriesList, doctorsList){
     // create button in doctor details page for return to main page
-    var input = document.createElement("input");
+    let input = document.createElement("input");
     input.setAttribute("type","button");
     input.setAttribute("id","doctor__page__menu--back");
     input.onclick = function() { getMainpage(categoriesList, doctorsList); };
@@ -96,13 +96,13 @@ export function reset(){
 
 function hideMenu(ul){
     document.getElementById("main__page__menu__item").style.display = "none"
-    var buttonMenu = document.getElementById("main__page__menu__bar");
+    let buttonMenu = document.getElementById("main__page__menu__bar");
     buttonMenu.onclick = function(){showMenu();}
 }
   
 function showMenu(ul){
     document.getElementById("main__page__menu__item").style.display = "block";
-    var buttonMenu = document.getElementById("main__page__menu__bar");
+    let buttonMenu = document.getElementById("main__page__menu__bar");
     buttonMenu.onclick = function(){
         hideMenu(ul);
     }
@@ -110,9 +110,9 @@ function showMenu(ul){
   
 export function generateMenu(ul, categoriesList, doctorsList){
     showMenu(ul);
-    var li = document.createElement("li");
-    var span = document.createElement("span");
-    var text = document.createTextNode("Get started");
+    let li = document.createElement("li");
+    let span = document.createElement("span");
+    let text = document.createTextNode("Get started");
     span.appendChild(text)
     span.onclick = function(){
         getIntro(categoriesList, doctorsList);
@@ -122,7 +122,7 @@ export function generateMenu(ul, categoriesList, doctorsList){
 }
 
 export function newImage(w, h, src, id, classCss){
-    var image = new Image(w,h);
+    let image = new Image(w,h);
     image.src = src;
     image.id = id;
     image.class = classCss;

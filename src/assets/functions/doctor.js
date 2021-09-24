@@ -1,20 +1,30 @@
-import './assets/css/doctor__page.scss';
+import '../css/doctor__page.scss';
 
-import { createContent, newImage } from './generic'
-import { getDoctor } from './page'
+import { createContent, newImage } from '../functions/generic'
+import { getDoctor } from '../functions/page'
 
-import avatar0 from '../src/assets/images/avatar1.svg';
-import avatar1 from '../src/assets/images/avatar2.svg';
-import avatar2 from '../src/assets/images/avatar3.svg';
+import avatar0 from '../images/avatar1.svg';
+import avatar1 from '../images/avatar2.svg';
+import avatar2 from '../images/avatar3.svg';
 
-import iconTel from '../src/assets/images/tel.png';
-import iconEmail from '../src/assets/images/email.png';
-import iconCall from '../src/assets/images/call.png';
+import iconTel from '../images/tel.png';
+import iconEmail from '../images/email.png';
+import iconCall from '../images/call.png';
 
-import bgDoctor from '../src/assets/images/bgdoctor.png';
+import bgDoctor from '../images/bgdoctor.png';
 
-import consultation1 from '../src/assets/images/cons1.png';
-import consultation2 from '../src/assets/images/cons2.png';
+import consultation1 from '../images/cons1.png';
+import consultation2 from '../images/cons2.png';
+
+import doctorsJson from '../doctors.json';
+import Doctor from '../../class/Doctor';
+export function createDoctorsList() {
+  const listDoctors = doctorsJson.doctorsList;
+  return listDoctors.map( function(doctor) {
+      return new Doctor(doctor.id, doctor.firstname, doctor.lastname, doctor.avatar, doctor.classCSS, doctor.categories, doctor.workplace, doctor.about)
+  })
+}
+
 
 function printAvatarDoctor(div, id){
   const avatar = [avatar0, avatar1, avatar2];
@@ -31,7 +41,7 @@ export function printDoctorsList(divcontainer, categoriesList, doctorsList){
 
     printAvatarDoctor(button, element.id);
 
-    var div = document.createElement("div");
+    let div = document.createElement("div");
     div.id= "doctor__list--details"; 
 
     div.appendChild(createContent("h2", "Dr. " + element.firstname+" "+element.lastname));
@@ -56,7 +66,7 @@ function printUpcomingSchedules(){
 }
 
 export function printDoctor(doctorsList, id){
-  var result = doctorsList
+  let result = doctorsList
     .filter(doc => doc.id === id);
 
   const divcontent = document.createElement('div');
