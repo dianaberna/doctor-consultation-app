@@ -1,15 +1,17 @@
 import '../css/intro__page.scss';
 
-import { createContent, printSearchBar, back, reset, generateMenu, newImage } from './generic'
-import { printDoctor, printDoctorsList, createBanner } from './doctor'
+import { createContent, back, reset, newImage, createBanner } from './utils'
+import { generateMenu } from './menu'
+import { printSearchBar } from './searchbar'
+import { printDoctor, printDoctorsList } from './doctor'
 import { printCategoriesList } from './categories';
-import iconOther from '../images/other.svg';
 
+import iconOther from '../images/other.svg';
 import bgImage from '../images/bghome.png';
 import menu from '../images/menu-bar.svg';
 import profile from '../images/profile.svg';
 
-// print intro page of app
+// print intro page
 export function getIntro(categoriesList, doctorsList){
   reset();
   const page = document.createElement('div');

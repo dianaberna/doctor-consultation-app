@@ -1,6 +1,6 @@
 import '../css/doctor__page.scss';
 
-import { createContent, newImage } from '../functions/generic'
+import { createContent, newImage, printUpcomingSchedules } from './utils'
 import { getDoctor } from '../functions/page'
 
 import avatar0 from '../images/avatar1.svg';
@@ -11,20 +11,15 @@ import iconTel from '../images/tel.png';
 import iconEmail from '../images/email.png';
 import iconCall from '../images/call.png';
 
-import bgDoctor from '../images/bgdoctor.png';
-
-import consultation1 from '../images/cons1.png';
-import consultation2 from '../images/cons2.png';
-
 import doctorsJson from '../doctors.json';
 import Doctor from '../../class/Doctor';
+
 export function createDoctorsList() {
   const listDoctors = doctorsJson.doctorsList;
   return listDoctors.map( function(doctor) {
       return new Doctor(doctor.id, doctor.firstname, doctor.lastname, doctor.avatar, doctor.classCSS, doctor.categories, doctor.workplace, doctor.about)
   })
 }
-
 
 function printAvatarDoctor(div, id){
   const avatar = [avatar0, avatar1, avatar2];
@@ -53,16 +48,28 @@ export function printDoctorsList(divcontainer, categoriesList, doctorsList){
   });
 }
 
-function printUpcomingSchedules(){
-  const div = document.createElement('div');
-  div.className = "doctor__upcoming-schedules";
-
-  div.appendChild(createContent("h2", "Upcoming Schedules"));
-
-  div.appendChild(newImage(325, 87, consultation1));
-  div.appendChild(newImage(325, 87, consultation2));
-
-  return div;
+export function resetDoctorList(categoriesList, doctorsList){
+  let title = document.getElementById("doctor__list--title");
+  // delete precedent reset button
+  removeAllChildNodes(title);
+  // rewrite title of doctors list
+  title.appendChild(createContent("h2", "Top Doctors"));
+  // create reset button 
+  let input = document.createElement("input");
+  input.setAttribute("type", "button");
+  input.setAttribute("id", "doctor__list--reset");
+  input.setAttribute("class", "btn")
+  input.setAttribute("value", "reset");
+  input.onclick = function(){
+      // clean doctor list
+      let page = document.getElementById("doctor__list--result");
+      page.innerHTML = "";
+      printDoctorsList(page, categoriesList, doctorsList);
+      // remove reset button
+      let button = document.getElementById("doctor__list--reset");
+      title.removeChild(button)
+  }
+  title.appendChild(input);
 }
 
 export function printDoctor(doctorsList, id){
@@ -98,10 +105,4 @@ export function printDoctor(doctorsList, id){
 
 }
 
-export function createBanner(){
-  const div = document.createElement('div');
-  div.className= "doctor__page--image";
-  div.style.cssText = `background-image: url(${bgDoctor})`;
-  return div;
-}
 
