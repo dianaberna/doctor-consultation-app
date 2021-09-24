@@ -41,13 +41,9 @@ The following are the requirements to be met:
 * Use only ES6
 * Reorganize files/folders
 * Refactoring readme
+* Add templating (ejs/hadnlebars)
 
-
-## Getting Started (to do)
-
-
-## Usage
-## Contributing
+### Contributing
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
 - Fork the Project
