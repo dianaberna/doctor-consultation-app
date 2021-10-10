@@ -1,4 +1,4 @@
-import { getIntro } from '../functions/page'
+import { getIntro } from 'Function/page'
 
 function hideMenu(ul){
     document.getElementById("main__page__menu__item").style.display = "none"

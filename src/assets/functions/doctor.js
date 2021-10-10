@@ -1,24 +1,27 @@
 import '../css/doctor__page.scss';
 
 import { createContent, newImage, printUpcomingSchedules, removeAllChildNodes } from './utils'
-import { getDoctor } from '../functions/page'
+import { getDoctor } from 'Function/page'
 
-import avatar0 from '../images/avatar1.svg';
-import avatar1 from '../images/avatar2.svg';
-import avatar2 from '../images/avatar3.svg';
-import iconTel from '../images/tel.png';
-import iconEmail from '../images/email.png';
-import iconCall from '../images/call.png';
+import avatar0 from 'Image/avatar1.svg';
+import avatar1 from 'Image/avatar2.svg';
+import avatar2 from 'Image/avatar3.svg';
+import iconTel from 'Image/tel.png';
+import iconEmail from 'Image/email.png';
+import iconCall from 'Image/call.png';
 
-import doctorsJson from '../doctors.json';
-
-import Doctor from '../class/Doctor';
+//import doctorsJson from 'API/doctors.json';
+//import Doctor from "Class/Doctor";
+import DoctorService from "Service/DoctorService";
 
 export function createDoctorsList() {
+  /*
   const listDoctors = doctorsJson.doctorsList;
   return listDoctors.map( function(doctor) {
       return new Doctor(doctor.id, doctor.firstname, doctor.lastname, doctor.avatar, doctor.classCSS, doctor.categories, doctor.workplace, doctor.about)
   })
+  */
+  return DoctorService.fetchAll();
 }
 
 function printAvatarDoctor(div, id){
@@ -104,5 +107,3 @@ export function printDoctor(doctorsList, id){
   return divcontent;
 
 }
-
-

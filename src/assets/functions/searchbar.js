@@ -1,7 +1,7 @@
-import { printDoctorsList, resetDoctorList } from '../functions/doctor'
-import { createContent } from '../functions/utils'
+import { printDoctorsList, resetDoctorList } from 'Function/doctor'
+import { createContent } from 'Function/utils'
 
-import iconSearch from '../images/search.svg';
+import iconSearch from 'Image/search.svg';
 
 function search(categoriesList, doctorsList){
     let input = document.getElementById("search__input");

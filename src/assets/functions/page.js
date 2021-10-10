@@ -6,10 +6,10 @@ import { printSearchBar } from './searchbar'
 import { printDoctor, printDoctorsList } from './doctor'
 import { printCategoriesList } from './categories';
 
-import iconOther from '../images/other.svg';
-import bgImage from '../images/bghome.png';
-import menu from '../images/menu-bar.svg';
-import profile from '../images/profile.svg';
+import iconOther from 'Image/other.svg';
+import bgImage from 'Image/bghome.png';
+import menu from 'Image/menu-bar.svg';
+import profile from 'Image/profile.svg';
 
 // print intro page
 export function getIntro(categoriesList, doctorsList){
@@ -23,7 +23,7 @@ export function getIntro(categoriesList, doctorsList){
 
   const button = document.createElement("button");
   button.className = "btn btn__home";
-  button.onclick = function() { }; //getMainpage(categoriesList, doctorsList); 
+  button.onclick = function() { getMainpage(categoriesList, doctorsList); }; 
   button.appendChild(document.createTextNode("Get started"));
   page.appendChild(button);
 
@@ -36,7 +36,7 @@ export function getIntro(categoriesList, doctorsList){
 
 // print the main page
 export function getMainpage(categoriesList, doctorsList) {
-    //reset();
+    reset();
 
     const page = document.createElement('div');
     document.getElementById("content").appendChild(page);

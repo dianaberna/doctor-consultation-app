@@ -3,9 +3,9 @@ import '../css/main__page.scss';
 import { createContent, newImage, getIcon } from './utils'
 import { categoriesSearch } from './searchbar';
 
-import categoriesJson from '../categories.json';
+import categoriesJson from "API/categories.json";
 
-import Category from '../class/Category';
+import Category from 'Class/Category';
 
 
 export function createCategoriesList() {

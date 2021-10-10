@@ -1,12 +1,12 @@
 import { getMainpage } from './page'
 
-import iconBack from '../images/back.svg';
-import bgDoctor from '../images/bgdoctor.png';
-import iconDental from '../images/dental.png';
-import iconHeart from '../images/heart.svg';
-import iconEye from '../images/eye.svg';
-import consultation1 from '../images/cons1.png';
-import consultation2 from '../images/cons2.png';
+import iconBack         from 'Image/back.svg';
+import bgDoctor         from 'Image/bgdoctor.png';
+import iconDental       from 'Image/dental.png';
+import iconHeart        from 'Image/heart.svg';
+import iconEye          from 'Image/eye.svg';
+import consultation1    from 'Image/cons1.png';
+import consultation2    from 'Image/cons2.png';
 
 export function createContent(tag, text, id) {
     const isContent = document.createElement(tag);
