@@ -1,27 +1,29 @@
-import { printDoctorsList, resetDoctorList } from 'Function/doctor'
+import { printDoctorsList, resetDoctorList } from 'Function/doctors'
 import { createContent } from 'Function/utils'
 
 import iconSearch from 'Image/search.svg';
+import * as DoctorService from "Service/DoctorService";
+import * as CategoryService from "Service/CategoryService";
 
-function search(categoriesList, doctorsList){
-    let input = document.getElementById("search__input");
+export async function search(){
 
-    let result = doctorsList
-        .filter(doc => doc.firstname.toLowerCase() === input.value.toLowerCase());
-
-    resetDoctorList(categoriesList, doctorsList);
-    let page = document.getElementById("doctor__list--result");
+    let input   = document.getElementById("search__input").value.toLowerCase();
+    
+    resetDoctorList();
+    
+    let page    = document.getElementById("doctor__list--result");
     page.innerHTML = "";
-    input.value = "";
-
-    if(result.length === 0){
-        page.appendChild(createContent("p", "No results"));
-    }else{  
-        printDoctorsList(page, categoriesList, result);
+    
+    if(input.length > 0)
+    {
+        let result = await DoctorService.searchByName(input);   
+        return (result.length === 0 ? page.appendChild(createContent("p", "No results")) : printDoctorsList(page, result));
     }
+    
+    await printDoctorsList(page);
 }
 
-export function printSearchBar(page, categoriesList,  doctorsList){
+export function printSearchBar(page){
 
     let input = document.createElement("input");
     input.setAttribute("type","text");
@@ -34,32 +36,27 @@ export function printSearchBar(page, categoriesList,  doctorsList){
     input.setAttribute("id","search__submit"); 
     input.setAttribute("value","");
     input.onclick = function(){ 
-        search(categoriesList, doctorsList);
+        search();
     };
     input.style.cssText = `background-image: url(${iconSearch})`;
     page.appendChild(input);
 }
 
-export function categoriesSearch(categoriesList, doctorList, id){
+export function categoriesSearch(id){
 
-    let resultcat = categoriesList
-      .find(cat => cat.id === id);
-    
-    let result = doctorList
-      .filter(doc => doc.categories === resultcat.name)
-  
-    printResultSearch(result, categoriesList, doctorList)
+    let resultCategory = CategoryService.fetch(id);
+
+    let categoryDoctors = DoctorService.searchByCategoryName(resultCategory.name) 
+
+    printResultSearch(categoryDoctors);
 }
 
-function printResultSearch(result, categoriesList, doctorList){
+function printResultSearch(result){
+    resetDoctorList();
 
-    resetDoctorList(categoriesList, doctorList);
-  
     let page = document.getElementById("doctor__list--result");
+  
     page.innerHTML = "";
-    if(result.length === 0){
-      page.appendChild(createContent("p", "No results"));
-    }else{  
-        printDoctorsList(page, categoriesList, result);
-    }
+
+    return (result.length > 0) ? printDoctorsList(page, result) : page.appendChild(createContent("p", "No results")); 
 }

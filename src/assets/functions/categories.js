@@ -1,40 +1,37 @@
 import '../css/main__page.scss';
 
 import { createContent, newImage, getIcon } from './utils'
-import { categoriesSearch } from './searchbar';
+import { categoriesSearch } from './searchbar'
 
-import categoriesJson from "API/categories.json";
+import * as CategoryService from 'Service/CategoryService'
 
-import Category from 'Class/Category';
-
-
-export function createCategoriesList() {
-  const listCategories = categoriesJson.categoriesList;
-  return listCategories.map( function(category) {
-      return new Category(category.id, category.name, category.image, category.classCSS)
-  })
-}
-
-export function printCategoriesList(page, categoriesList, doctorList){
+export async function printCategoriesList(page){
   
   let div = document.createElement("div");
   div.id= "categories__list";
-  
-  categoriesList.forEach(element => {
+
+  let categories = await CategoryService.fetchAll(); 
+
+  categories.forEach(category => {
+    
     let item = document.createElement("div")
     item.className = "categories__list--item";
-    item.onclick = function(){ categoriesSearch(categoriesList, doctorList, element.id);}
+
+    item.onclick = function(){ 
+      categoriesSearch(category.id);
+    }
 
     let icon = document.createElement("div");
-    icon.className = "categories__list--icon "+element.classCSS;
+    icon.className = "categories__list--icon "+category.classCSS;
 
-    icon.appendChild(newImage(35, 35, getIcon(element.id), element.id));
+    icon.appendChild(newImage(35, 35, getIcon(category.id), category.id));
 
     item.appendChild(icon);
-    item.appendChild(createContent("h3",element.name))
+    item.appendChild(createContent("h3",category.name))
+
     div.appendChild(item)
 
   });
-
   page.appendChild(div);
+
 }

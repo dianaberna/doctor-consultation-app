@@ -16,14 +16,15 @@ function showMenu(ul){
     }
 }
   
-export function generateMenu(ul, categoriesList, doctorsList){
+export function generateMenu(ul){
     showMenu(ul);
     let li = document.createElement("li");
     let span = document.createElement("span");
     let text = document.createTextNode("Get started");
+
     span.appendChild(text)
     span.onclick = function(){
-        getIntro(categoriesList, doctorsList);
+        getIntro();
     }
     li.appendChild(span);
     ul.appendChild(li);

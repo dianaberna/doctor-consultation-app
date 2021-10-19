@@ -45,12 +45,12 @@ export function removeAllChildNodes(parent) {
     }
 }
 
-export function back(categoriesList, doctorsList){
+export function back(){
     // create button in doctor details page for return to main page
     let input = document.createElement("input");
     input.setAttribute("type","button");
     input.setAttribute("id","doctor__page__menu--back");
-    input.onclick = function() { getMainpage(categoriesList, doctorsList); };
+    input.onclick = function() { getMainpage(); };
     input.style.cssText = `background-image: url(${iconBack})`;
 
     return input;
