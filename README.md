@@ -1,6 +1,6 @@
 
 
-# Doctor Consultation App - Mobile UI <img src="./src/td-logo.png" alt="td logo" width="30"/>
+# Doctor Consultation App - Mobile UI <img src="./src/assets/images/td-logo.png" alt="td logo" width="30"/>
 To view the site online it is available here [deploy link](https://doctor-consultation-app.netlify.app/)
 ## About the project
 The project was done within the TomorrowDevs mentoring course and consists of replicating the mobile UI of the Doctor Consultation app using an OOP development methodology.
@@ -9,6 +9,7 @@ The project was done within the TomorrowDevs mentoring course and consists of re
 - Javascript ES6
 - Webpack
 - Sass
+- EJS
 
 ## Requirement
 
@@ -25,7 +26,7 @@ The following are the requirements to be met:
 * Deploy the project towards Netlify (www.netlify.com) connected to your GitHub Repo
 * After the project is deployed, analyze it with https://web.dev
 
-![mobile ui](./src/Doctor-Consultation-App-Free-Figma-UI-Kit.jpeg)
+![mobile ui](./src/assets/images/Doctor-Consultation-App-Free-Figma-UI-Kit.jpeg)
 
 ## Tasks executed
 * Recreate the static layout css class (index, getstarted page and doctor page)

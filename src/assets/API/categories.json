@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "name":"Dental Surgeon", 
+        "image":"dental.png",
+        "classCSS":"dental"
+    },
+    {
+        "id":2,
+        "name":"Heart Surgeon", 
+        "image":"heart.png",
+        "classCSS":"heart"
+    },
+    {
+        "id":3,
+        "name":"Eye Specialist", 
+        "image":"eye.png",
+        "classCSS":"eye"
+    }
+]
