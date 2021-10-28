@@ -35,7 +35,10 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: "./src/index.html" }),
+    new HtmlWebpackPlugin({ 
+      template: "./src/index.ejs",
+      title: "Doctor Consultation App - Homepage" 
+    }),
     new BrowserSyncPlugin({
       // browse to http://localhost:3000/ during development,
       // ./public directory is being served
