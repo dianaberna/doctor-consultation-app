@@ -9,7 +9,6 @@ The project was done within the TomorrowDevs mentoring course and consists of re
 - Javascript ES6
 - Webpack
 - Sass
-- EJS
 
 ## Requirement
 
@@ -42,7 +41,6 @@ The following are the requirements to be met:
 * Use only ES6
 * Reorganize files/folders
 * Refactoring readme
-* Add templating (ejs/hadnlebars)
 
 ### Contributing
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
